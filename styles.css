@@ -210,3 +210,11 @@ footer{
 @media(max-width:560px){
   .hero-main-image{min-height:280px}
 }
+
+body{font-family:"Noto Kufi Arabic",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;text-align:right}
+.hero h1,.section-title,.about-grid h2,.contact h2{letter-spacing:-.02em}
+.brand,.hero-actions,.contact-actions,.mini-stats,.maraseel-title-row,.timeline-item,.app-top,.chat-item,footer{direction:rtl}
+nav{direction:rtl}
+.eyebrow,.section-kicker{letter-spacing:.08em}
+.hero-main-image{object-position:center}
+@media(max-width:900px){nav{right:0;left:0}}
