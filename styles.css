@@ -218,3 +218,8 @@ nav{direction:rtl}
 .eyebrow,.section-kicker{letter-spacing:.08em}
 .hero-main-image{object-position:center}
 @media(max-width:900px){nav{right:0;left:0}}
+
+.maraseel-bird-svg{display:block;width:100%;height:100%}
+.brand-mark.bird-brand{padding:5px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(0,194,184,.08));border:1px solid rgba(0,194,184,.18);overflow:hidden}
+.bird-logo{width:70px;height:60px;filter:drop-shadow(0 10px 22px rgba(0,194,184,.24))}
+.bird-logo .maraseel-bird-svg{width:100%;height:100%}
