@@ -291,70 +291,48 @@ nav{direction:rtl}
 }
 
 
-/* Official Maraseel logo */
-.maraseel-logo-crop{
+/* Official Maraseel logo - show image directly, no nested square */
+.maraseel-logo-img{
   display:block;
   width:100%;
   height:100%;
-  background-image:url("maraseel-logo.webp");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  border-radius:inherit;
+  object-fit:contain;
+  object-position:center;
 }
 
 .brand-mark.bird-brand{
   width:52px;
   height:52px;
-  padding:4px;
+  padding:0;
   border-radius:16px;
   overflow:hidden;
-  background:#071417;
-  border:1px solid rgba(0,194,184,.32);
-  box-shadow:0 0 0 1px rgba(0,194,184,.05),0 8px 24px rgba(0,194,184,.12);
-  display:grid;
-  place-items:center;
-}
-
-.brand-mark.bird-brand .maraseel-logo-crop{
-  width:100%;
-  height:100%;
-  transform:none;
-  border-radius:12px;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  display:block;
 }
 
 .bird-logo{
-  width:76px;
-  height:66px;
-  padding:4px;
-  overflow:hidden;
+  width:68px;
+  height:68px;
+  padding:0;
   border-radius:18px;
-  background:#071417;
-  border:1px solid rgba(0,194,184,.2);
-  filter:drop-shadow(0 10px 22px rgba(0,194,184,.18));
-  display:grid;
-  place-items:center;
-}
-
-.bird-logo .maraseel-logo-crop{
-  width:100%;
-  height:100%;
-  transform:none;
-  border-radius:14px;
+  overflow:hidden;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  filter:none;
+  display:block;
 }
 
 .mini-logo.maraseel-mini-logo{
-  padding:3px;
+  width:34px;
+  height:34px;
+  padding:0;
+  border-radius:12px;
   overflow:hidden;
-  background:#071417;
-  border:1px solid rgba(0,194,184,.22);
-  display:grid;
-  place-items:center;
-}
-
-.mini-logo.maraseel-mini-logo .maraseel-logo-crop{
-  width:100%;
-  height:100%;
-  transform:none;
-  border-radius:8px;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  display:block;
 }
