@@ -317,10 +317,10 @@ nav{direction:rtl}
 }
 
 .brand-mark.bird-brand .maraseel-logo-crop{
-  width:70%;
-  height:70%;
+  width:100%;
+  height:100%;
   transform:none;
-  border-radius:12px;
+  border-radius:15px;
 }
 
 .bird-logo{
@@ -336,10 +336,10 @@ nav{direction:rtl}
 }
 
 .bird-logo .maraseel-logo-crop{
-  width:74%;
-  height:74%;
+  width:100%;
+  height:100%;
   transform:none;
-  border-radius:14px;
+  border-radius:17px;
 }
 
 .mini-logo.maraseel-mini-logo{
@@ -351,8 +351,8 @@ nav{direction:rtl}
   place-items:center;
 }
 .mini-logo.maraseel-mini-logo .maraseel-logo-crop{
-  width:68%;
-  height:68%;
+  width:100%;
+  height:100%;
   transform:none;
-  border-radius:9px;
+  border-radius:11px;
 }
