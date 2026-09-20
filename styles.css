@@ -291,22 +291,22 @@ nav{direction:rtl}
 }
 
 
-/* Use the exact bird artwork from the current Maraseel hero image */
+/* Official Maraseel logo */
 .maraseel-logo-crop{
   display:block;
   width:100%;
   height:100%;
-  background-image:url("16C984E8-5AB5-4AB2-870E-B0FB190F1A9D.png");
+  background-image:url("maraseel-logo.webp");
   background-repeat:no-repeat;
-  background-size:300% auto;
-  background-position:72.5% 16%;
+  background-size:contain;
+  background-position:center;
   border-radius:inherit;
 }
 
 .brand-mark.bird-brand{
   width:52px;
   height:52px;
-  padding:0;
+  padding:4px;
   border-radius:16px;
   overflow:hidden;
   background:#071417;
@@ -320,12 +320,13 @@ nav{direction:rtl}
   width:100%;
   height:100%;
   transform:none;
-  border-radius:15px;
+  border-radius:12px;
 }
 
 .bird-logo{
   width:76px;
   height:66px;
+  padding:4px;
   overflow:hidden;
   border-radius:18px;
   background:#071417;
@@ -339,20 +340,21 @@ nav{direction:rtl}
   width:100%;
   height:100%;
   transform:none;
-  border-radius:17px;
+  border-radius:14px;
 }
 
 .mini-logo.maraseel-mini-logo{
-  padding:0;
+  padding:3px;
   overflow:hidden;
   background:#071417;
   border:1px solid rgba(0,194,184,.22);
   display:grid;
   place-items:center;
 }
+
 .mini-logo.maraseel-mini-logo .maraseel-logo-crop{
   width:100%;
   height:100%;
   transform:none;
-  border-radius:11px;
+  border-radius:8px;
 }
