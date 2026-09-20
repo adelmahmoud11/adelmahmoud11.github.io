@@ -172,10 +172,18 @@ main,.site-header,footer{position:relative}
   box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)
 }
 .hero-main-image{
-  display:block;width:100%;aspect-ratio:4/4.6;object-fit:cover;object-position:center top;
-  background:#081316;transition:transform .55s ease
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  background:#081316;
+  transition:none
 }
-.hero-image-card:hover .hero-main-image{transform:scale(1.018)}
+.hero-image-card:hover .hero-main-image{transform:none}
 .hero-image-caption{
   position:relative;padding:22px 24px 24px;
   background:linear-gradient(180deg,rgba(9,20,23,.96),rgba(6,14,16,.99));
