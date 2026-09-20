@@ -1,0 +1,4 @@
+Contact: mailto:adelsat2008@gmail.com
+Canonical: https://adelmahmoud11.github.io/.well-known/security.txt
+Preferred-Languages: ar, en
+Expires: 2027-09-20T00:00:00.000Z
