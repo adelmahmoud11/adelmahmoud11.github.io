@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عادل محمود | Adel Mahmoud — مطور برمجيات ومؤسس مراسيل</title>
+<meta name="description" content="عادل محمود (Adel Mahmoud) مطور برمجيات Flutter و Next.js، مؤسس ومطور تطبيق مراسيل Maraseel للتواصل بدون إنترنت، ومطور موقع حاسبة للحاسبات السعودية.">
+<meta name="keywords" content="عادل محمود, مطور مراسيل, مراسيل, تطبيق مراسيل, Maraseel, Adel Mahmoud, adelmah, حاسبة, حاسبة نهاية الخدمة, Flutter Developer, Next.js">
+<meta name="author" content="عادل محمود | Adel Mahmoud">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-site-verification" content="zUrPOCQYK6MaweJ-y6xegXfUOBKs_wlvwQUmkkPMq5I">
+<meta name="theme-color" content="#04110f">
+<link rel="canonical" href="https://adelmah.com/">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="عادل محمود">
+<meta property="og:title" content="عادل محمود | مطور برمجيات ومؤسس مراسيل">
+<meta property="og:description" content="مطور Flutter و Next.js، مؤسس تطبيق مراسيل وموقع حاسبة.">
+<meta property="og:url" content="https://adelmah.com/">
+<meta property="og:image" content="https://adelmah.com/adel-mahmoud-maraseel-developer.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="maraseel-logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","image":"https://adelmah.com/adel-mahmoud-maraseel-developer.jpg","jobTitle":"Software Developer","worksFor":{"@type":"Organization","name":"Maraseel"},"sameAs":["https://github.com/adelmahmoud11","https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel","https://hasba.adelmah.com"]}
+</script>
+<style>
+:root{
+  --bg:#04110f;--bg2:#071a17;--card:rgba(255,255,255,.04);--line:rgba(110,255,200,.14);
+  --mint:#5cf2b8;--mint2:#2dd4bf;--teal:#0ea5a4;--gold:#f5c66b;
+  --text:#e9fff6;--muted:#93b8ad;--r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.8}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.en{font-family:'Space Grotesk',sans-serif;direction:ltr;unicode-bidi:isolate}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+
+/* ===== background ===== */
+#net{position:fixed;inset:0;z-index:-2}
+.blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.45;z-index:-3;animation:float 18s ease-in-out infinite}
+.b1{width:520px;height:520px;background:#0f766e;top:-140px;right:-120px}
+.b2{width:420px;height:420px;background:#065f46;bottom:-160px;left:-120px;animation-delay:-6s}
+.b3{width:300px;height:300px;background:#14b8a6;top:45%;left:40%;opacity:.18;animation-delay:-12s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-40px) scale(1.1)}66%{transform:translate(-40px,50px) scale(.95)}}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cursor-glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(92,242,184,.12),transparent 65%);transform:translate(-50%,-50%);transition:opacity .3s}
+
+/* ===== loader ===== */
+#loader{position:fixed;inset:0;background:var(--bg);z-index:100;display:grid;place-items:center;transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+.ld-logo{width:84px;height:84px;border-radius:24px;animation:pulse 1.2s ease-in-out infinite}
+.ld-bar{width:160px;height:3px;background:var(--line);border-radius:9px;margin-top:22px;overflow:hidden}
+.ld-bar i{display:block;height:100%;width:40%;background:linear-gradient(90deg,var(--mint),var(--teal));animation:load 1s ease-in-out infinite}
+@keyframes load{from{transform:translateX(260%)}to{transform:translateX(-160%)}}
+@keyframes pulse{50%{transform:scale(1.08);filter:drop-shadow(0 0 24px var(--mint))}}
+
+/* ===== nav ===== */
+nav{position:fixed;top:14px;inset-inline:0;z-index:50}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(4,17,15,.6);backdrop-filter:blur(14px)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand img{width:34px;height:34px;border-radius:10px}
+.links{display:flex;gap:6px}
+.links a{padding:6px 14px;border-radius:999px;color:var(--muted);font-weight:600;font-size:.95rem;transition:.25s}
+.links a:hover,.links a.on{color:var(--bg);background:var(--mint)}
+.menu{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+.progress{position:fixed;top:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--mint));z-index:60;width:0}
+
+/* ===== buttons ===== */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:700;transition:.3s;position:relative;overflow:hidden}
+.btn.pri{background:linear-gradient(135deg,var(--mint),var(--mint2));color:#022;box-shadow:0 10px 30px -10px var(--mint)}
+.btn.pri:hover{transform:translateY(-3px);box-shadow:0 16px 40px -10px var(--mint)}
+.btn.pri::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.5),transparent 70%);transform:translateX(120%);transition:.7s}
+.btn.pri:hover::after{transform:translateX(-120%)}
+.btn.ghost{border:1px solid var(--line);background:var(--card)}
+.btn.ghost:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ===== hero ===== */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;padding-top:110px}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:.85rem;color:var(--mint);background:rgba(92,242,184,.06)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 var(--mint);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px transparent}}
+h1{font-size:clamp(2.3rem,5.4vw,4.4rem);line-height:1.2;font-weight:900;margin:18px 0 10px}
+.grad{background:linear-gradient(120deg,var(--mint),#a7f3d0,var(--mint2),var(--mint));background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:300%}}
+.typed{font-size:clamp(1.2rem,2.4vw,1.7rem);font-weight:700;color:var(--muted);min-height:2.2em}
+.typed b{color:var(--text)}
+.caret{display:inline-block;width:3px;height:1.1em;background:var(--mint);vertical-align:middle;margin-inline-start:4px;animation:blink .8s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{color:var(--muted);font-size:1.08rem;max-width:560px;margin:14px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;gap:34px;margin-top:40px;flex-wrap:wrap}
+.stat b{display:block;font-size:2rem;font-weight:900;color:var(--mint)}
+.stat span{color:var(--muted);font-size:.9rem}
+
+/* photo with orbit */
+.photo-box{position:relative;width:min(420px,100%);aspect-ratio:1;margin-inline:auto}
+.ring{position:absolute;inset:0;border-radius:50%;border:1px dashed var(--line);animation:spin 30s linear infinite}
+.ring.r2{inset:-34px;animation-duration:45s;animation-direction:reverse}
+.ring .ico{position:absolute;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.4rem;background:var(--bg2);border:1px solid var(--line);box-shadow:0 0 20px rgba(92,242,184,.15);animation:spin 30s linear infinite reverse}
+.r2 .ico{animation-duration:45s;animation-direction:normal}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo{position:absolute;inset:38px;border-radius:50%;overflow:hidden;border:2px solid rgba(92,242,184,.35);box-shadow:0 0 0 10px rgba(92,242,184,.05),0 0 90px rgba(45,212,191,.35)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,17,15,.5),transparent 50%)}
+.badge{position:absolute;bottom:6%;inset-inline-start:-6%;padding:10px 16px;border-radius:16px;background:rgba(4,17,15,.8);backdrop-filter:blur(10px);border:1px solid var(--line);display:flex;gap:10px;align-items:center;animation:bob 4s ease-in-out infinite;font-size:.9rem}
+.badge img{width:34px;border-radius:10px}
+.badge.b-2{bottom:auto;top:8%;inset-inline-start:auto;inset-inline-end:-8%;animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-12px)}}
+
+/* ===== marquee ===== */
+.marquee{border-block:1px solid var(--line);padding:18px 0;overflow:hidden;background:rgba(255,255,255,.015);margin-top:40px}
+.track{display:flex;gap:48px;width:max-content;animation:mq 30s linear infinite}
+.track span{font-family:'Space Grotesk';font-weight:700;font-size:1.25rem;color:var(--muted);display:flex;align-items:center;gap:48px;white-space:nowrap}
+.track span::after{content:"✦";color:var(--mint);font-size:.9rem}
+@keyframes mq{to{transform:translateX(50%)}}
+
+/* ===== sections ===== */
+section{padding:110px 0}
+.kicker{color:var(--mint);font-weight:700;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--mint)}
+h2{font-size:clamp(1.8rem,3.6vw,2.8rem);font-weight:900;line-height:1.3;margin:10px 0 16px}
+.sub{color:var(--muted);max-width:640px}
+
+.reveal{opacity:0;transform:translateY(40px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.glass{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;backdrop-filter:blur(8px);position:relative;overflow:hidden}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),rgba(92,242,184,.12),transparent 40%);opacity:0;transition:.3s;pointer-events:none}
+.glass:hover::before{opacity:1}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.skills span{padding:6px 14px;border-radius:999px;border:1px solid var(--line);font-size:.9rem;transition:.25s}
+.skills span:hover{background:var(--mint);color:var(--bg);transform:translateY(-3px)}
+
+/* ===== projects ===== */
+.project{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-top:60px;padding:44px;border-radius:32px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(15,118,110,.14),rgba(255,255,255,.02));position:relative;overflow:hidden}
+.project.alt{background:linear-gradient(145deg,rgba(245,198,107,.08),rgba(255,255,255,.02))}
+.project .num{position:absolute;top:-30px;inset-inline-end:20px;font-size:10rem;font-weight:900;color:rgba(92,242,184,.05);font-family:'Space Grotesk';line-height:1}
+.p-head{display:flex;align-items:center;gap:14px}
+.p-head img,.p-icon{width:64px;height:64px;border-radius:18px;box-shadow:0 10px 30px -10px var(--mint)}
+.p-icon{display:grid;place-items:center;font-size:2rem;background:linear-gradient(135deg,var(--gold),#e8a33a);box-shadow:0 10px 30px -10px var(--gold)}
+.p-head h3{font-size:1.8rem;font-weight:900;line-height:1.2}
+.p-head small{color:var(--muted)}
+.role{display:inline-block;margin:18px 0 6px;padding:4px 12px;border-radius:8px;background:rgba(92,242,184,.1);color:var(--mint);font-size:.85rem;font-weight:700}
+.alt .role{background:rgba(245,198,107,.12);color:var(--gold)}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0 26px}
+.feat div{display:flex;gap:8px;align-items:center;font-size:.95rem;color:var(--muted)}
+.feat div i{font-style:normal}
+
+/* phone mockup */
+.phone{width:260px;height:520px;margin-inline:auto;border-radius:42px;background:#020a09;border:8px solid #11211e;box-shadow:0 40px 80px -20px rgba(0,0,0,.8),0 0 60px rgba(45,212,191,.25);padding:14px;position:relative;animation:bob 6s ease-in-out infinite;transform-style:preserve-3d}
+.notch{width:90px;height:22px;background:#11211e;border-radius:0 0 14px 14px;margin:-14px auto 10px}
+.app-top{display:flex;align-items:center;gap:8px;font-size:.85rem;font-weight:700;margin-bottom:10px}
+.app-top img{width:28px;border-radius:8px}
+.app-top small{color:var(--mint);font-weight:600;margin-inline-start:auto;font-size:.7rem}
+.chat{display:flex;flex-direction:column;gap:8px}
+.msg{max-width:78%;padding:8px 12px;border-radius:14px;font-size:.78rem;opacity:0;transform:translateY(10px) scale(.95)}
+.msg.me{align-self:flex-start;background:linear-gradient(135deg,var(--mint2),var(--teal));color:#012}
+.msg.them{align-self:flex-end;background:#13302b}
+.msg.show{animation:pop .5s forwards}
+@keyframes pop{to{opacity:1;transform:none}}
+.wave{display:flex;gap:3px;align-items:center;height:18px}
+.wave i{width:3px;background:#012;border-radius:3px;animation:wv 1s ease-in-out infinite}
+.wave i:nth-child(2n){animation-delay:-.3s}.wave i:nth-child(3n){animation-delay:-.6s}
+@keyframes wv{0%,100%{height:4px}50%{height:16px}}
+.radar{position:absolute;bottom:22px;inset-inline:0;margin:auto;width:110px;height:110px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center}
+.radar::before,.radar::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--mint);animation:rad 2.4s ease-out infinite}
+.radar::after{animation-delay:1.2s}
+@keyframes rad{from{transform:scale(.3);opacity:1}to{transform:scale(1.4);opacity:0}}
+.radar span{font-size:.65rem;color:var(--mint);text-align:center;line-height:1.4}
+
+/* calculator mockup */
+.calc{width:min(360px,100%);margin-inline:auto;border-radius:26px;background:#0b1513;border:1px solid rgba(245,198,107,.25);padding:24px;box-shadow:0 40px 80px -20px rgba(0,0,0,.7),0 0 60px rgba(245,198,107,.15);animation:bob 6s ease-in-out infinite;animation-delay:-3s}
+.calc .bar{display:flex;gap:6px;margin-bottom:16px}
+.calc .bar i{width:10px;height:10px;border-radius:50%;background:#333}
+.calc .bar i:first-child{background:#f87171}.calc .bar i:nth-child(2){background:var(--gold)}.calc .bar i:nth-child(3){background:var(--mint)}
+.calc h4{font-size:1.05rem;margin-bottom:14px}
+.field{display:flex;justify-content:space-between;padding:10px 14px;border-radius:12px;background:#122220;margin-bottom:10px;font-size:.88rem;color:var(--muted)}
+.field b{color:var(--text)}
+.result{margin-top:14px;padding:18px;border-radius:16px;background:linear-gradient(135deg,rgba(245,198,107,.2),rgba(245,198,107,.05));text-align:center}
+.result small{color:var(--muted)}
+.result b{display:block;font-size:2rem;font-weight:900;color:var(--gold);font-family:'Space Grotesk'}
+.tabs{display:flex;gap:8px;margin-top:14px}
+.tabs span{flex:1;text-align:center;padding:8px;border-radius:10px;font-size:.8rem;border:1px solid rgba(245,198,107,.2);color:var(--muted)}
+.tabs span.on{background:var(--gold);color:#221;font-weight:700}
+
+/* ===== journey ===== */
+.timeline{position:relative;margin-top:50px;padding-inline-start:40px}
+.timeline::before{content:"";position:absolute;inset-inline-start:11px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl-fill{position:absolute;inset-inline-start:11px;top:0;width:2px;background:linear-gradient(var(--mint),var(--teal));height:0;box-shadow:0 0 12px var(--mint)}
+.step{position:relative;margin-bottom:36px}
+.step::before{content:"";position:absolute;inset-inline-start:-36px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--mint);box-shadow:0 0 14px var(--mint)}
+.step .yr{font-family:'Space Grotesk';color:var(--mint);font-weight:700}
+.step h4{font-size:1.2rem;margin:2px 0}
+.step p{color:var(--muted)}
+
+/* ===== contact ===== */
+.contact{text-align:center;padding:70px 30px;border-radius:36px;border:1px solid var(--line);background:radial-gradient(circle at 50% 0%,rgba(45,212,191,.25),transparent 60%),var(--card);position:relative;overflow:hidden}
+.contact .cta{justify-content:center;margin-top:26px}
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.9rem}
+
+/* ===== responsive ===== */
+@media(max-width:900px){
+  .hero,.project,.about-grid{grid-template-columns:1fr}
+  .hero{text-align:center;padding-top:120px}
+  .lead{margin-inline:auto}.cta,.stats{justify-content:center}
+  .photo-box{width:300px;order:-1}
+  .project{padding:28px 20px}
+  .links{position:absolute;top:70px;inset-inline:16px;flex-direction:column;background:rgba(4,17,15,.95);border:1px solid var(--line);border-radius:20px;padding:12px;display:none}
+  .links.open{display:flex}
+  .menu{display:block}
+  .badge{display:none}
+}
+@media(max-width:480px){.feat{grid-template-columns:1fr}.stats{gap:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.msg{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div id="loader"><div style="text-align:center"><img class="ld-logo" src="maraseel-logo.webp" alt=""><div class="ld-bar"><i></i></div></div></div>
+<div class="progress" id="progress"></div>
+<canvas id="net"></canvas>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="grain"></div>
+<div class="cursor-glow" id="glow"></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#home" class="brand"><img src="maraseel-logo.webp" alt="شعار مراسيل"><span class="en">Adel Mahmoud</span></a>
+    <div class="links" id="links">
+      <a href="#about">نبذة عني</a>
+      <a href="#projects">مشاريعي</a>
+      <a href="#journey">رحلتي</a>
+      <a href="#contact">تواصل</a>
+    </div>
+    <button class="menu" id="menu" aria-label="القائمة">☰</button>
+  </div>
+</nav>
+
+<main id="home">
+  <div class="wrap hero">
+    <div>
+      <span class="tag reveal"><span class="dot"></span> متاح لمشاريع وفرص جديدة</span>
+      <h1 class="reveal d1">عادل محمود<br><span class="grad">مطور برمجيات</span></h1>
+      <div class="typed reveal d2">أنا <b id="typed"></b><span class="caret"></span></div>
+      <p class="lead reveal d3">أحوّل الأفكار إلى منتجات حقيقية يستخدمها الناس — من تطبيق <b>مراسيل</b> للتواصل حتى بدون إنترنت، إلى موقع <b>حاسبة</b> للحاسبات السعودية.</p>
+      <div class="cta reveal d4">
+        <a href="#projects" class="btn pri">شوف مشاريعي ←</a>
+        <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="noopener" class="btn ghost">حمّل مراسيل</a>
+      </div>
+      <div class="stats reveal d4">
+        <div class="stat"><b><span class="count" data-to="9">0</span>+</b><span>سنوات في البرمجة</span></div>
+        <div class="stat"><b><span class="count" data-to="2">0</span></b><span>منتجات منشورة</span></div>
+        <div class="stat"><b><span class="count" data-to="178">0</span></b><span>دولة متاح فيها مراسيل</span></div>
+      </div>
+    </div>
+
+    <div class="photo-box reveal d2">
+      <div class="ring r2">
+        <div class="ico" style="top:-26px;left:calc(50% - 26px)">💙</div>
+        <div class="ico" style="bottom:-26px;left:calc(50% - 26px)">⚡</div>
+      </div>
+      <div class="ring">
+        <div class="ico" style="top:calc(50% - 26px);left:-26px">📱</div>
+        <div class="ico" style="top:calc(50% - 26px);right:-26px">🧮</div>
+      </div>
+      <div class="photo"><img src="adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود - مطور برمجيات ومؤسس مراسيل"></div>
+      <div class="badge"><img src="maraseel-logo.webp" alt=""><div><b>مؤسس مراسيل</b><br><small style="color:var(--muted)">Founder</small></div></div>
+      <div class="badge b-2"><span style="font-size:1.6rem">🧮</span><div><b>حاسبة</b><br><small style="color:var(--muted)">hasba.adelmah.com</small></div></div>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <div class="track" id="track">
+      <span>Flutter</span><span>Dart</span><span>Next.js</span><span>React</span><span>Supabase</span><span>Firebase</span><span>WebRTC</span><span>Riverpod</span><span>PostgreSQL</span><span>MySQL</span><span>Python</span><span>Figma</span><span>Vercel</span>
+    </div>
+  </div>
+</main>
+
+<section id="about">
+  <div class="wrap">
+    <div class="kicker reveal">نبذة عني</div>
+    <h2 class="reveal d1">مطور يبني منتجات <span class="grad">من الفكرة للإطلاق</span></h2>
+    <p class="sub reveal d2">بكتب كود من 2017، وبشتغل على كل مراحل المنتج: التصميم في Figma، بناء التطبيق، قواعد البيانات، النشر، والتسويق كمان.</p>
+    <div class="about-grid">
+      <div class="glass reveal d1">
+        <h3>📱 تطبيقات الموبايل</h3>
+        <p style="color:var(--muted)">تطبيقات Flutter كاملة: واجهات، تسجيل دخول، محادثات لحظية، مكالمات WebRTC، إشعارات، وتواصل محلي بدون إنترنت.</p>
+        <div class="skills"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>GoRouter</span><span>WebRTC</span><span>Android / Kotlin</span></div>
+      </div>
+      <div class="glass reveal d2">
+        <h3>🌐 الويب والباك إند</h3>
+        <p style="color:var(--muted)">مواقع سريعة بـ Next.js ومنشورة على Vercel، مع قواعد بيانات وخدمات سحابية وأدوات أتمتة بـ Python.</p>
+        <div class="skills"><span>Next.js</span><span>React</span><span>Supabase</span><span>Firebase</span><span>PostgreSQL</span><span>Python</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="kicker reveal">مشاريعي</div>
+    <h2 class="reveal d1">منتجات حقيقية <span class="grad">منشورة ويستخدمها الناس</span></h2>
+
+    <!-- Maraseel -->
+    <div class="project reveal">
+      <div class="num">01</div>
+      <div>
+        <div class="p-head"><img src="maraseel-logo.webp" alt="شعار مراسيل"><div><h3>مراسيل</h3><small class="en">Maraseel</small></div></div>
+        <span class="role">👑 المؤسس والمطور</span>
+        <p style="color:var(--muted)">تطبيق تواصل يجمع المحادثات والمكالمات عبر الإنترنت، والاتصال المباشر بالأجهزة القريبة عبر Wi-Fi <b style="color:var(--text)">بدون إنترنت</b>. تواصل أقرب.. لناس أقرب.</p>
+        <div class="feat">
+          <div><i>📶</i>مراسلة بدون إنترنت</div>
+          <div><i>🎙️</i>بث صوتي مباشر</div>
+          <div><i>🔳</i>انضمام بمسح QR</div>
+          <div><i>📞</i>مكالمات صوت وفيديو</div>
+          <div><i>⏺️</i>تسجيل البث</div>
+          <div><i>🔔</i>إشعارات فورية</div>
+        </div>
+        <div class="cta">
+          <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="noopener" class="btn pri">Google Play ↗</a>
+          <a href="https://adelmah.com/maraseel/" class="btn ghost">صفحة التطبيق</a>
+        </div>
+      </div>
+      <div class="phone tilt" id="phone">
+        <div class="notch"></div>
+        <div class="app-top"><img src="maraseel-logo.webp" alt=""> مراسيل <small>● Offline</small></div>
+        <div class="chat" id="chat">
+          <div class="msg them">السلام عليكم 👋 النت فاصل هنا</div>
+          <div class="msg me">ولا يهمك، مراسيل شغال بالـ Wi-Fi 😄</div>
+          <div class="msg them"><div class="wave" style="filter:invert(1)"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <div class="msg me">امسح الـ QR وادخل البث 🎙️</div>
+        </div>
+        <div class="radar"><span>جاري البحث عن<br>أجهزة قريبة</span></div>
+      </div>
+    </div>
+
+    <!-- Hasba -->
+    <div class="project alt reveal">
+      <div class="num">02</div>
+      <div>
+        <div class="p-head"><div class="p-icon">🧮</div><div><h3>حاسبة</h3><small class="en">hasba.adelmah.com</small></div></div>
+        <span class="role">🛠️ فكرة وتطوير</span>
+        <p style="color:var(--muted)">موقع حاسبات سعودية مجانية وسريعة، بيحسبلك مستحقاتك في ثواني بدون تعقيد. مبني بـ Next.js ومنشور على Vercel.</p>
+        <div class="feat">
+          <div><i>💼</i>مكافأة نهاية الخدمة</div>
+          <div><i>⚖️</i>حاسبة الميراث</div>
+          <div><i>⚡</i>سريع ومجاني</div>
+          <div><i>📱</i>متوافق مع الجوال</div>
+        </div>
+        <div class="cta"><a href="https://hasba.adelmah.com" target="_blank" rel="noopener" class="btn pri" style="background:linear-gradient(135deg,var(--gold),#e8a33a);box-shadow:0 10px 30px -10px var(--gold)">زور الموقع ↗</a></div>
+      </div>
+      <div class="calc tilt">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <h4>💼 مكافأة نهاية الخدمة</h4>
+        <div class="field">الراتب الأساسي <b class="en">8,000 SAR</b></div>
+        <div class="field">مدة الخدمة <b><span id="yrs">0</span> سنوات</b></div>
+        <div class="result"><small>المكافأة المستحقة</small><b class="en"><span id="res">0</span> SAR</b></div>
+        <div class="tabs"><span class="on">نهاية الخدمة</span><span>الميراث</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="kicker reveal">رحلتي</div>
+    <h2 class="reveal d1">من أول سطر كود <span class="grad">لحد الإطلاق</span></h2>
+    <div class="timeline" id="timeline">
+      <div class="tl-fill" id="tlfill"></div>
+      <div class="step reveal"><span class="yr">2017</span><h4>البداية</h4><p>بدأت أكتب كود وأطوّر نفسي في برمجة التطبيقات والمواقع.</p></div>
+      <div class="step reveal"><span class="yr">2018</span><h4>التحول لـ Flutter</h4><p>مع صدور Flutter بدأت أبني تطبيقات موبايل لأندرويد وآيفون بكود واحد.</p></div>
+      <div class="step reveal"><span class="yr">2026</span><h4>إطلاق مراسيل</h4><p>نُشر مراسيل رسميًا على Google Play في 30 سبتمبر 2026، ومتاح مجانًا في 178 دولة.</p></div>
+      <div class="step reveal"><span class="yr">2026</span><h4>إطلاق حاسبة</h4><p>موقع حاسبات سعودية مبني بـ Next.js على hasba.adelmah.com.</p></div>
+      <div class="step reveal"><span class="yr">القادم</span><h4>مراسيل على iOS</h4><p>نقل مراسيل لأجهزة آيفون، ومشاريع جديدة في الطريق 🚀</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <h2>عندك فكرة تطبيق أو موقع؟ <span class="grad">يلا نبنيها</span></h2>
+      <p class="sub" style="margin-inline:auto">راسلني بخصوص مشروع، فرصة عمل، أو تابع رحلة تطوير مراسيل.</p>
+      <div class="cta">
+        <a href="mailto:adelsat2008@gmail.com" class="btn pri">✉️ راسلني</a>
+        <a href="https://github.com/adelmahmoud11" target="_blank" rel="noopener" class="btn ghost">GitHub</a>
+        <a href="https://hasba.adelmah.com" target="_blank" rel="noopener" class="btn ghost">حاسبة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> عادل محمود — مطور برمجيات ومؤسس مراسيل</footer>
+
+<script>
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),500));
+setTimeout(()=>document.getElementById('loader').classList.add('done'),3000);
+document.getElementById('y').textContent=new Date().getFullYear();
+
+/* menu */
+const links=document.getElementById('links');
+document.getElementById('menu').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+
+/* marquee duplicate */
+const tr=document.getElementById('track');tr.innerHTML+=tr.innerHTML;
+
+/* typing */
+const words=['مطور تطبيقات Flutter','مؤسس تطبيق مراسيل','مطور مواقع Next.js','صانع موقع حاسبة'];
+let wi=0,ci=0,del=false;const tEl=document.getElementById('typed');
+(function type(){const w=words[wi];tEl.textContent=w.slice(0,ci);
+  if(!del&&ci<w.length){ci++;setTimeout(type,90)}
+  else if(!del){del=true;setTimeout(type,1600)}
+  else if(ci>0){ci--;setTimeout(type,45)}
+  else{del=false;wi=(wi+1)%words.length;setTimeout(type,300)}})();
+
+/* counters */
+function countUp(el,to,dur=1600){const s=performance.now();(function f(t){const p=Math.min((t-s)/dur,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3))).toLocaleString('en');if(p<1)requestAnimationFrame(f)})(s)}
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+  e.target.querySelectorAll?.('.count').forEach(c=>{if(!c.done){c.done=1;countUp(c,+c.dataset.to)}});
+  io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* chat animation */
+const msgs=[...document.querySelectorAll('#chat .msg')];
+function playChat(){msgs.forEach(m=>m.classList.remove('show'));msgs.forEach((m,i)=>setTimeout(()=>m.classList.add('show'),600+i*1100));}
+new IntersectionObserver(es=>{if(es[0].isIntersecting){playChat();clearInterval(window.ci);window.ci=setInterval(playChat,7000)}},{threshold:.4}).observe(document.getElementById('phone'));
+
+/* calculator animation: 8000 basic, end of service = half month first 5 yrs + full month after */
+const yrsEl=document.getElementById('yrs'),resEl=document.getElementById('res');
+const seq=[3,5,8,12];let si=0;
+function calc(y){const s=8000;return y<=5?y*s/2:5*s/2+(y-5)*s}
+function runCalc(){const y=seq[si++%seq.length];yrsEl.textContent=y;countUp(resEl,calc(y),1200)}
+runCalc();setInterval(runCalc,3000);
+
+/* scroll progress + nav active + timeline */
+const secs=['about','projects','journey','contact'].map(id=>document.getElementById(id));
+const navA=[...links.querySelectorAll('a')];
+addEventListener('scroll',()=>{const h=document.documentElement;
+  document.getElementById('progress').style.width=(h.scrollTop/(h.scrollHeight-innerHeight))*100+'%';
+  let cur=-1;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<innerHeight*.4)cur=i});
+  navA.forEach((a,i)=>a.classList.toggle('on',i===cur));
+  const tl=document.getElementById('timeline').getBoundingClientRect();
+  const p=Math.min(Math.max((innerHeight*.7-tl.top)/tl.height,0),1);
+  document.getElementById('tlfill').style.height=p*100+'%';
+},{passive:true});
+
+/* cursor glow + card spotlight + tilt */
+const glow=document.getElementById('glow');
+if(matchMedia('(pointer:fine)').matches&&!reduce){
+  addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+  document.querySelectorAll('.glass').forEach(c=>c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+  document.querySelectorAll('.tilt').forEach(c=>{
+    c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.animation='none';c.style.transform=`perspective(900px) rotateY(${x*18}deg) rotateX(${-y*18}deg) scale(1.03)`});
+    c.addEventListener('mouseleave',()=>{c.style.transform='';c.style.animation=''});
+  });
+}else glow.style.display='none';
+
+/* particle network background */
+const cv=document.getElementById('net'),cx=cv.getContext('2d');let pts=[],mouse={x:-999,y:-999};
+function size(){cv.width=innerWidth*devicePixelRatio;cv.height=innerHeight*devicePixelRatio;cx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  const n=Math.min(Math.floor(innerWidth*innerHeight/16000),90);
+  pts=Array.from({length:n},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))}
+size();addEventListener('resize',size);
+addEventListener('mousemove',e=>{mouse.x=e.clientX;mouse.y=e.clientY});
+function draw(){cx.clearRect(0,0,innerWidth,innerHeight);
+  for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;
+    const dm=Math.hypot(p.x-mouse.x,p.y-mouse.y);if(dm<140){p.x+=(p.x-mouse.x)/dm;p.y+=(p.y-mouse.y)/dm}
+    cx.fillStyle='rgba(92,242,184,.6)';cx.beginPath();cx.arc(p.x,p.y,1.6,0,7);cx.fill()}
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const a=pts[i],b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+    if(d<130){cx.strokeStyle=`rgba(92,242,184,${.18*(1-d/130)})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+  if(!reduce)requestAnimationFrame(draw)}
+draw();
+</script>
+</body>
+</html>
