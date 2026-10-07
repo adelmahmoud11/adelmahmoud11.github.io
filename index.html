@@ -76,7 +76,7 @@ nav.scrolled{background:rgba(5,13,12,.82);backdrop-filter:blur(14px);border-colo
 [dir=rtl] .flip{transform:scaleX(-1)}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding:72px 0 88px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:72px 0 88px}
 .status{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--muted);border:1px solid var(--border);background:var(--surface);padding:5px 12px 5px 14px;border-radius:999px}
 .status i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(63,212,168,.2);animation:pulse 2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 6px rgba(63,212,168,0)}}
@@ -90,10 +90,18 @@ h1 .acc{color:var(--accent)}
 .socials a:hover{color:var(--accent);border-color:var(--accent)}
 .socials svg{width:18px;height:18px}
 
-.profile{position:relative;justify-self:center;width:min(360px,100%)}
-.profile-card{border:1px solid var(--border);border-radius:24px;background:var(--surface);padding:12px;position:relative}
-.profile-card img.me{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;background:var(--surface2)}
-.profile-meta{display:flex;align-items:center;justify-content:space-between;padding:14px 6px 4px}
+.profile{position:relative;justify-self:center;width:min(480px,100%)}
+.profile-card{position:relative;border-radius:28px;padding:2px;background:linear-gradient(140deg,rgba(63,212,168,.9),rgba(63,212,168,.08) 35%,rgba(63,212,168,.08) 65%,rgba(232,183,90,.7));box-shadow:0 40px 80px -30px rgba(0,0,0,.9),0 0 70px -20px rgba(63,212,168,.35)}
+.profile-inner{border-radius:26px;background:var(--surface);padding:10px;position:relative}
+.frame-c{position:absolute;width:26px;height:26px;border-color:var(--accent);border-style:solid;z-index:2;pointer-events:none}
+.ph{position:relative}
+.ph::after{content:"";position:absolute;inset:0;border-radius:18px;background:linear-gradient(to top,rgba(5,13,12,.35),transparent 30%);pointer-events:none}
+.frame-c.tl{top:12px;left:12px;border-width:2px 0 0 2px;border-radius:8px 0 0 0}
+.frame-c.tr{top:12px;right:12px;border-width:2px 2px 0 0;border-radius:0 8px 0 0}
+.frame-c.bl{bottom:12px;left:12px;border-width:0 0 2px 2px;border-radius:0 0 0 8px}
+.frame-c.br{bottom:12px;right:12px;border-width:0 2px 2px 0;border-radius:0 0 8px 0}
+.profile-card img.me{width:100%;height:auto;border-radius:18px;background:var(--surface2)}
+.profile-meta{display:flex;align-items:center;justify-content:space-between;padding:14px 10px 6px}
 .profile-meta b{display:block;font-size:1.05rem}
 .profile-meta small{color:var(--muted)}
 .loc{display:flex;align-items:center;gap:5px;color:var(--muted);font-size:.85rem}
@@ -221,7 +229,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media(max-width:960px){
   .hero,.case-top,.proj2{grid-template-columns:1fr}
   .hero{padding-top:40px;gap:48px}
-  .profile{order:-1;width:min(300px,100%)}
+  .profile{order:-1;width:100%}
   .chip-float.c1{inset-inline-start:-16px}.chip-float.c2{inset-inline-end:-16px}
   .svc,.case-body{grid-template-columns:1fr}
   .cb{border-inline-start:0;border-top:1px solid var(--border)}.cb:first-child{border-top:0}
@@ -304,13 +312,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   </div>
 
   <div class="profile rv">
-    <div class="profile-card">
-      <img class="me" src="adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود - Adel Mahmoud">
+    <div class="profile-card"><div class="profile-inner">
+      <div class="ph"><span class="frame-c tl"></span><span class="frame-c tr"></span><span class="frame-c bl"></span><span class="frame-c br"></span>
+      <img class="me" src="adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود - Adel Mahmoud"></div>
       <div class="profile-meta">
         <div><b data-en="Adel Mahmoud">عادل محمود</b><small data-en="Software Developer">مطور برمجيات</small></div>
         <span class="loc"><svg class="i"><use href="#pin"/></svg><span data-en="Jeddah, KSA">جدة، السعودية</span></span>
       </div>
-    </div>
+    </div></div>
     <div class="chip-float c1"><img src="maraseel-logo.webp" alt=""><div><b data-en="Founder">مؤسس مراسيل</b><small>Maraseel</small></div></div>
     <div class="chip-float c2"><span class="ci"><svg class="i"><use href="#calc"/></svg></span><div><b data-en="Hasba">حاسبة</b><small>hasba.adelmah.com</small></div></div>
   </div>
