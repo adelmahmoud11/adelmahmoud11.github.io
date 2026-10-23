@@ -82,9 +82,11 @@ nav.scrolled{background:rgba(5,13,12,.82);backdrop-filter:blur(14px);border-colo
 @keyframes pulse{50%{box-shadow:0 0 0 6px rgba(63,212,168,0)}}
 h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.2;font-weight:700;letter-spacing:-.5px;margin:22px 0 18px}
 h1 .acc{color:var(--accent)}
-h1.poetry{font-family:'Amiri',serif;font-size:clamp(1.5rem,3.3vw,2.15rem);line-height:2.05;font-weight:700;letter-spacing:0;text-align:start}
-h1.poetry .vp{display:block}
-h1.poetry .gold{color:var(--gold)}
+h1.poetry{font-family:'Amiri',serif;font-size:clamp(1.35rem,2.7vw,1.95rem);line-height:2.1;font-weight:700;letter-spacing:0}
+h1.poetry .pv{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+h1.poetry .pv+.pv{margin-top:10px}
+h1.poetry .v2{color:var(--accent)}
+@media(max-width:640px){h1.poetry .pv{flex-direction:column;align-items:flex-start;gap:0}}
 .lead{font-size:1.1rem;color:var(--muted);max-width:560px}
 .lead b{color:var(--text);font-weight:600}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
@@ -304,7 +306,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <header id="top" class="wrap hero">
   <div>
     <span class="status rv"><i></i><span data-en="Open to new opportunities">متاح لفرص ومشاريع جديدة</span></span>
-    <h1 class="rv poetry" data-en="If I sought a mere modest living,<span class='vp'>it would suffice me — I'd ask for no more.</span><span class='vp'>But I seek <span class='gold'>a glory that endures</span>.</span><span class='vp'>And such glory is won by those like me.</span>"><span class="vp">فَلَوْ أَنَّما أَسْعى لِأَدْنى مَعِيشَةٍ</span><span class="vp">كَفانِي وَلَمْ أَطْلُبْ قَلِيلٌ مِنَ الْمَالِ</span><span class="vp">وَلَكِنَّما أَسْعى لِمَجْدٍ <span class="gold">مُؤَثَّلٍ</span></span><span class="vp">وَقَدْ <span class="gold">يُدْرِكُ الْمَجْدَ الْمُؤَثَّلَ</span> أَمْثالِي</span></h1>
+    <h1 class="rv poetry" data-en="<span class='pv v1'><span class='vp'>If I sought a mere modest living,</span><span class='vp'>it would suffice me — no more.</span></span><span class='pv v2'><span class='vp'>But I seek a glory that endures,</span><span class='vp'>and such glory is won by those like me.</span></span>"><span class="pv v1"><span class="vp">فَلَوْ أَنَّما أَسْعى لِأَدْنى مَعِيشَةٍ</span><span class="vp">كَفانِي وَلَمْ أَطْلُبْ قَلِيلٌ مِنَ الْمَالِ</span></span><span class="pv v2"><span class="vp">وَلَكِنَّما أَسْعى لِمَجْدٍ مُؤَثَّلٍ</span><span class="vp">وَقَدْ يُدْرِكُ الْمَجْدَ الْمُؤَثَّلَ أَمْثالِي</span></span></h1>
     <p class="lead rv" data-en="I'm Adel Mahmoud, a software developer and digital marketer, and the founder of <b>Maraseel</b> — a messaging app that works even without internet. I take products from idea and design to launch and marketing, with Flutter on mobile and Next.js on the web.">أنا عادل محمود، مطور برمجيات ومسوّق إلكتروني ومؤسس تطبيق <b>مراسيل</b> — تطبيق تواصل يشتغل حتى بدون إنترنت. بنقل المنتج من فكرة وتصميم لحد الإطلاق والتسويق، بـ Flutter للموبايل و Next.js للويب.</p>
     <div class="cta rv">
       <a href="#work" class="btn pri"><span data-en="View my work">شوف أعمالي</span></a>
