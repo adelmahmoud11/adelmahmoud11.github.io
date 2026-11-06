@@ -10,6 +10,7 @@ Digital Marketing Specialist & Brand Developer in Jeddah, Saudi Arabia — found
 | | Product | Link |
 |---|---|---|
 | 📱 | **مراسيل / Maraseel** — Communication app (chat, calls, Wi-Fi Direct offline broadcast) | [Google Play](https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel) · [adelmah.com/maraseel](https://adelmah.com/maraseel/) |
+| 📜 | **صدى الجاهلية / Sada al-Jahiliyya** — Pre-Islamic Arabic poetry library (Ten Mualaqat + ~20,000 verses, offline) | [Google Play](https://play.google.com/store/apps/details?id=com.adelmah.sada_aljahiliyya) |
 | 🧮 | **حاسبة / Hasba** — Saudi end-of-service & inheritance calculators | [hasba.adelmah.com](https://hasba.adelmah.com) |
 | 🏷️ | **تخفيضات / Takhfeedat** — Deals & price-tracking platform | [takhfeedat.adelmah.com](https://takhfeedat.adelmah.com) |
 
