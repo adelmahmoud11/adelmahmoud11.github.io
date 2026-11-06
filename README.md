@@ -1,10 +1,10 @@
-# Adel Mahmoud | عادل محمود — أخصائي تسويق رقمي ومؤسس تطبيق مراسيل (Maraseel)
+# Adel Mahmoud | عادل محمود — أخصائي تسويق رقمي ومطور علامات تجارية · مؤسس تطبيق مراسيل (Maraseel)
 
-Digital Marketing Specialist & Growth Marketer in Jeddah, Saudi Arabia — with an engineering background in Flutter & Next.js.
+Digital Marketing Specialist & Brand Developer in Jeddah, Saudi Arabia — founder of Maraseel, with an engineering background in Flutter & Next.js.
 
 **🌐 Live portfolio / البورتفوليو:** [https://adelmah.com](https://adelmah.com)
 
-عادل محمود — أخصائي تسويق رقمي (Digital Marketing / Growth Marketing) في جدة، السعودية، بخلفية هندسية في تطوير Flutter و Next.js، ومؤسس تطبيق **مراسيل (Maraseel)**. أبني وأدير استراتيجيات نمو مبنية على البيانات: تحسين محركات البحث (SEO)، حملات Google و Meta، وتحسين معدلات التحويل (CRO).
+عادل محمود — أخصائي تسويق رقمي ومطور علامات تجارية (Digital Marketing / Growth Marketing) في جدة، السعودية، بخلفية هندسية في تطوير Flutter و Next.js، ومؤسس تطبيق **مراسيل (Maraseel)**. أبني وأدير استراتيجيات نمو مبنية على البيانات: تحسين محركات البحث (SEO)، حملات Google و Meta، وتحسين معدلات التحويل (CRO).
 
 ## Products / المنتجات
 | | Product | Link |
