@@ -224,8 +224,7 @@ h2{font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.3;font-weight:700;letter-s
 .pcard:hover{border-color:var(--border2)}
 .pcard .p-head .pi{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;background:rgba(232,183,90,.12);color:var(--gold)}
 .pcard .p-head .pi svg{width:26px;height:26px}
-.pcard .p-head .pi img{width:100%;height:100%;border-radius:14px;object-fit:cover}
-.pcard .shot{width:100%;border:1px solid var(--border);border-radius:14px;margin:4px 0 20px}
+.case-shot{width:min(300px,100%);border-radius:24px;border:1px solid var(--border2);box-shadow:0 40px 70px -30px rgba(0,0,0,.85);display:block;justify-self:center}
 .pcard p{color:var(--muted);margin:6px 0 20px}
 .pcard .cta{margin-top:auto}
 .mini-calc{border:1px solid var(--border);border-radius:16px;background:var(--bg);padding:18px;margin-bottom:22px}
@@ -500,21 +499,36 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       </div>
     </article>
 
-    <div class="proj2">
-      <article class="pcard rv">
-        <div class="p-head"><div class="pi"><img src="sada-icon.png" alt="شعار صدى الجاهلية" width="512" height="512" loading="lazy" decoding="async"></div><div><h3 data-en="Sada al-Jahiliyya">صدى الجاهلية</h3><small>sada · Android</small></div></div>
-        <div><span class="pill"><svg class="i" style="width:14px;height:14px"><use href="#check"/></svg><span data-en="Live on Google Play">منشور على Google Play</span></span></div>
-        <p data-en="The Arabic diwan before Islam: the Ten Mualaqat fully vocalized with al-Tabrizi's commentary, 60+ poets with ~20,000 verses, and Jamharat Ash'ar al-Arab — works fully offline.">ديوان العرب قبل الإسلام: المعلقات العشر مشكولةً بشرح التبريزي، وأكثر من ٦٠ شاعرًا بنحو ٢٠ ألف بيت، وجمهرة أشعار العرب — يعمل بلا إنترنت.</p>
-        <img class="shot" src="sada-screenshot.png" alt="شاشة المعلقات العشر في تطبيق صدى الجاهلية" loading="lazy" decoding="async">
-        <div class="feat">
-          <div><svg class="i"><use href="#check"/></svg><span data-en="Tap any highlighted word for its meaning">اضغط أي كلمة مظللة لتعرف معناها</span></div>
-          <div><svg class="i"><use href="#check"/></svg><span data-en="Verse of the day + self-quizzes">بيت اليوم + اختبار نفسك</span></div>
-          <div><svg class="i"><use href="#check"/></svg><span data-en="6 eye-comfortable color modes">٦ أوضاع ألوان مريحة للعين</span></div>
-          <div><svg class="i"><use href="#check"/></svg><span data-en="Fully offline, collects no data">بلا إنترنت، ولا يجمع بيانات</span></div>
+    <article class="case rv">
+      <div class="case-top">
+        <div>
+          <div class="p-head"><img src="sada-icon.png" alt="شعار صدى الجاهلية" width="512" height="512" loading="lazy" decoding="async"><div><h3 data-en="Sada al-Jahiliyya">صدى الجاهلية</h3><small>sada · Android</small></div></div>
+          <span class="pill"><svg class="i" style="width:14px;height:14px"><use href="#check"/></svg><span data-en="Live on Google Play">منشور على Google Play</span></span>
+          <span class="pill g" data-en="Developer">المطور</span>
+          <p class="case-desc" data-en="The Arabic diwan before Islam in one elegant app: the Ten Mualaqat fully vocalized with al-Tabrizi's commentary, 60+ poets with ~20,000 verses, and Jamharat Ash'ar al-Arab — works fully offline.">ديوان العرب قبل الإسلام في تطبيق واحد أنيق: المعلقات العشر مشكولةً بشرح التبريزي، وأكثر من ٦٠ شاعرًا بنحو ٢٠ ألف بيت، وجمهرة أشعار العرب — يعمل بلا إنترنت.</p>
+          <div class="feat">
+            <div><svg class="i"><use href="#check"/></svg><span data-en="Tap any highlighted word for its meaning">اضغط أي كلمة مظللة لتعرف معناها</span></div>
+            <div><svg class="i"><use href="#check"/></svg><span data-en="Verse of the day + self-quizzes">بيت اليوم + اختبار نفسك</span></div>
+            <div><svg class="i"><use href="#check"/></svg><span data-en="6 eye-comfortable color modes">٦ أوضاع ألوان مريحة للعين</span></div>
+            <div><svg class="i"><use href="#check"/></svg><span data-en="Save favorites and share them as images">احفظ المفضلة وشاركها كصور</span></div>
+          </div>
+          <div class="cta">
+            <a href="https://play.google.com/store/apps/details?id=com.adelmah.sada_aljahiliyya" target="_blank" rel="noopener" class="btn pri"><svg class="i f"><use href="#play"/></svg><span>Google Play</span></a>
+            <a href="https://adelmah.com/sada/privacy.html" class="btn sec"><span data-en="Privacy policy">سياسة الخصوصية</span><svg class="i flip"><use href="#arrow"/></svg></a>
+          </div>
         </div>
-        <div class="cta"><a href="https://play.google.com/store/apps/details?id=com.adelmah.sada_aljahiliyya" target="_blank" rel="noopener" class="btn sec"><span data-en="Download the app">حمّل التطبيق</span><svg class="i flip"><use href="#arrow"/></svg></a></div>
-      </article>
+        <div class="device">
+          <img class="case-shot" src="sada-screenshot.png" alt="شاشة المعلقات العشر في تطبيق صدى الجاهلية" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div class="case-body">
+        <div class="cb"><h4><svg class="i"><use href="#target"/></svg><span data-en="The problem">المشكلة</span></h4><p data-en="Pre-Islamic poetry is scattered across heritage books: barely vocalized texts, hard words cutting off the reader, and no single reference.">الشعر الجاهلي مشتت بين أمهات الكتب، والنصوص غالبًا غير مشكولة، والكلمات الغريبة تقطع المتعة على من يقرأ اليوم.</p></div>
+        <div class="cb"><h4><svg class="i"><use href="#bulb"/></svg><span data-en="The solution">الحل</span></h4><p data-en="One app combining the Ten Mualaqat with al-Tabrizi's commentary and 60+ poets on ~20,000 verses — one tap on any word shows its meaning, fully offline.">تطبيق واحد يجمع المعلقات العشر مشكولةً بشرح التبريزي وأكتر من ٦٠ شاعرًا بنحو ٢٠ ألف بيت — وضغطة على أي كلمة تظهر معناها فورًا، وكل ده بلا إنترنت.</p></div>
+        <div class="cb"><h4><svg class="i"><use href="#layers"/></svg><span data-en="Tech stack">التقنيات</span></h4><p>Flutter · SQLite · يعمل بلا إنترنت · بلا تتبع</p></div>
+      </div>
+    </article>
 
+    <div class="proj2">
       <article class="pcard rv">
         <div class="p-head"><div class="pi"><svg class="i"><use href="#calc"/></svg></div><div><h3 data-en="Hasba">حاسبة</h3><small>hasba.adelmah.com</small></div></div>
         <div><span class="pill"><svg class="i" style="width:14px;height:14px"><use href="#check"/></svg><span data-en="Live">منشور</span></span></div>
