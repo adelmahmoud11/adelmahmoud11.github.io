@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>عادل محمود | أخصائي تسويق رقمي — مطور تطبيقات وعلامات تجارية — Adel Mahmoud</title>
 <meta name="description" content="عادل محمود (Adel Mahmoud) — أخصائي تسويق رقمي ومطور تطبيقات وعلامات تجارية في جدة، السعودية — بنى وأطلق تطبيق مراسيل Maraseel وصدى الجاهلية وموقعي حاسبة وتخفيضات. متاح لعمل بدوام كامل بمقر الشركة (Full-time / On-site).">
-<meta name="keywords" content="عادل محمود, Adel Mahmoud, adelmah, مطور عادل محمود, عادل محمود مطور, مطور تطبيقات عادل, أخصائي تسويق رقمي, مطور علامات تجارية, تسويق رقمي جدة, تسويق رقمي السعودية, تسويق الكتروني, مسوق الكتروني, مسويق ديجيتال, Brand Developer, Brand Development, Digital Marketing, Digital Marketing Specialist, Digital Marketing Jeddah, Digital Marketer, Growth Marketing, Growth Marketer, SEO Specialist, CRO, Google Ads Specialist, Meta Ads, GA4, Conversion Rate Optimization, مطور تطبيقات, Flutter Developer, Flutter Developer Jeddah, Next.js Developer, مؤسس تطبيق مراسيل, مراسيل, Maraseel, تطبيق مراسيل, صدى الجاهلية, المعلقات, شعر جاهلي, ديوان المعلقات, فرصة عمل تسويق رقمي, وظيفة اخصائي تسويق, وظيفة مسوق الكتروني, متاح للعمل فورا, تسويق رقمي بدوام كامل, Full-time, On-site, جدة, السعودية">
+<meta name="keywords" content="عادل محمود, Adel Mahmoud, adelmah, مطور عادل محمود, عادل محمود مطور, مطور تطبيقات عادل, أخصائي تسويق رقمي, مطور علامات تجارية, تسويق رقمي جدة, تسويق رقمي السعودية, تسويق الكتروني, مسوق الكتروني, مقالات تسويق رقمي, مدونة تسويق, مسويق ديجيتال, Brand Developer, Brand Development, Digital Marketing, Digital Marketing Specialist, Digital Marketing Jeddah, Digital Marketer, Growth Marketing, Growth Marketer, SEO Specialist, CRO, Google Ads Specialist, Meta Ads, GA4, Conversion Rate Optimization, مطور تطبيقات, Flutter Developer, Flutter Developer Jeddah, Next.js Developer, مؤسس تطبيق مراسيل, مراسيل, Maraseel, تطبيق مراسيل, صدى الجاهلية, المعلقات, شعر جاهلي, ديوان المعلقات, فرصة عمل تسويق رقمي, وظيفة اخصائي تسويق, وظيفة مسوق الكتروني, متاح للعمل فورا, تسويق رقمي بدوام كامل, Full-time, On-site, جدة, السعودية">
 <meta name="author" content="عادل محمود | Adel Mahmoud">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="zUrPOCQYK6MaweJ-y6xegXfUOBKs_wlvwQUmkkPMq5I">
@@ -251,6 +251,16 @@ h2{font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.3;font-weight:700;letter-s
 .stack div{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:16px 10px;text-align:center;font:600 .9rem 'Inter';color:var(--muted);transition:.2s}
 .stack div:hover{color:var(--text);border-color:var(--accent)}
 
+/* blog */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.post{border:1px solid var(--border);border-radius:var(--r);background:var(--surface);padding:24px;display:flex;flex-direction:column;gap:10px;transition:.25s}
+.post:hover{border-color:var(--accent);transform:translateY(-3px)}
+.post small{color:var(--accent);font:600 .74rem 'Inter';letter-spacing:.6px}
+.post h3{font-size:1.02rem;line-height:1.62;font-weight:600}
+.post p{color:var(--muted);font-size:.89rem;flex:1}
+.post .pm{display:flex;justify-content:space-between;align-items:center;color:var(--dim);font-size:.8rem;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}
+.post .pm svg{color:var(--accent);width:16px;height:16px}
+
 /* contact */
 .contact{border:1px solid var(--border2);border-radius:28px;padding:64px 32px;text-align:center;background:radial-gradient(600px 260px at 50% 0%,rgba(63,212,168,.14),transparent),var(--surface)}
 .contact .cta{justify-content:center}
@@ -273,13 +283,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .stats{grid-template-columns:repeat(2,1fr)}
   .stat:nth-child(3){border-inline-start:0}.stat:nth-child(n+3){border-top:1px solid var(--border)}
   .stack{grid-template-columns:repeat(3,1fr)}
+  .posts{grid-template-columns:1fr 1fr}
   .case-top{padding:28px 22px}
   .links{display:none;position:absolute;top:68px;inset-inline:0;flex-direction:column;align-items:stretch;background:var(--bg);border-bottom:1px solid var(--border);padding:12px 20px}
   .links.open{display:flex}
   .menu{display:block}
   .job{grid-template-columns:1fr;gap:4px}
 }
-@media(max-width:640px){.svc{grid-template-columns:1fr}}
+@media(max-width:640px){.svc{grid-template-columns:1fr}.posts{grid-template-columns:1fr}}
 @media(max-width:520px){.feat{grid-template-columns:1fr}.pcard{padding:24px}.chip-float{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
@@ -327,6 +338,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <a href="#marketing" data-en="Marketing">التسويق</a>
       <a href="#work" data-en="Work">أعمالي</a>
       <a href="#experience" data-en="Experience">الخبرة</a>
+      <a href="#blog" data-en="Articles">مقالات</a>
       <a href="#contact" data-en="Contact">تواصل</a>
     </div>
     <div class="nav-end">
@@ -583,6 +595,48 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <div>Flutter</div><div>Dart</div><div>Next.js</div><div>React</div><div>Supabase</div><div>Firebase</div>
       <div>WebRTC</div><div>Riverpod</div><div>PostgreSQL</div><div>MySQL</div><div>Python</div><div>Figma</div>
       <div>SEO</div><div>Google Ads</div><div>Meta Ads</div><div>Analytics</div>
+    </div>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow rv">Blog</div>
+      <h2 class="rv" data-en="Digital marketing articles — writings by Adel Mahmoud">مقالات تسويق رقمي — كتابات عادل محمود</h2>
+      <p class="sec-sub rv" data-en="I write about SEO, paid ads and conversion rate optimization — practical experience from launching digital products, in clear Arabic, for business owners.">أكتب عن تحسين محركات البحث والإعلانات الممولة وتحسين معدلات التحويل — خبرة عملية من إطلاق منتجات رقمية، بلغة واضحة لأصحاب الأعمال.</p>
+    </div>
+    <div class="posts">
+      <a class="post rv" href="blog/digital-marketing-plan-saudi.html">
+        <small>استراتيجية</small><h3 data-en="A digital marketing plan for small businesses in Saudi Arabia — a practical guide">خطة تسويق رقمي للشركات الصغيرة في السعودية — دليل عملي</h3>
+        <p>من هدف واحد قابل للقياس إلى قياس أسبوعي بثلاثة أرقام — خطة تناسب الميزانية المحدودة وتُظهر نتائجها.</p>
+        <span class="pm"><time datetime="2026-11-07" class="num">2026/11/07</time><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
+      <a class="post rv" href="blog/seo-guide-arabic.html">
+        <small>تحسين محركات البحث</small><h3 data-en="SEO for beginners — how your site appears in Google results">دليل تحسين محركات البحث (SEO) للمبتدئين — كيف يظهر موقعك في جوجل</h3>
+        <p>الزحف والفهرسة والترتيب، خمسة أخطاء تقنية تصلح في يوم، والسيو المحلي كنز السوق السعودي.</p>
+        <span class="pm"><time datetime="2026-11-07" class="num">2026/11/07</time><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
+      <a class="post rv" href="blog/google-ads-vs-meta-ads.html">
+        <small>إعلانات ممولة</small><h3 data-en="Google Ads vs Meta Ads: where to put your budget?">إعلانات Google مقابل Meta: أين تضع ميزانيتك؟</h3>
+        <p>نية البحث مقابل نية الاكتشاف — متى تختار كل منصة، معادلة توزيع 70/20/10، وقياس بأمان.</p>
+        <span class="pm"><time datetime="2026-11-07" class="num">2026/11/07</time><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
+      <a class="post rv" href="blog/ecommerce-marketing-mistakes.html">
+        <small>تجارة إلكترونية</small><h3 data-en="7 digital marketing mistakes killing your online store's sales">7 أخطاء تسويق رقمي تقتل مبيعات متجرك الإلكتروني</h3>
+        <p>صفحة منتج ضعيفة، بطء، إعلان يذهب للرئيسية، غياب السلة المهجورة، وشحن غامض — مع قائمة تحقق.</p>
+        <span class="pm"><time datetime="2026-11-07" class="num">2026/11/07</time><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
+      <a class="post rv" href="blog/conversion-rate-guide.html">
+        <small>تحسين التحويل</small><h3 data-en="Conversion rate optimization (CRO) — more sales from the same traffic">تحسين معدل التحويل (CRO) — زيادة مبيعاتك من نفس عدد الزوار</h3>
+        <p>2% إلى 3% معدل تحويل = +50% مبيعات بنفس الإنفاق: القياس، سبع قواعد للصفحة، وترتيب الأولويات.</p>
+        <span class="pm"><time datetime="2026-11-07" class="num">2026/11/07</time><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
+      <a class="post rv" href="https://adelmah.com/#services" style="justify-content:center">
+        <small>Services</small><h3 data-en="Need a digital marketing specialist on-site?">محتاج أخصائي تسويق رقمي بمقر شركتك؟</h3>
+        <p>تسريبات، استراتيجية نمو، أعمال تحسين محركات البحث، وإدارة حملات ممولة — بتفرغ كامل.</p>
+        <span class="pm"><span data-en="Details here">التفاصيل هنا</span><svg class="i flip"><use href="#arrow"/></svg></span>
+      </a>
     </div>
   </div>
 </section>
