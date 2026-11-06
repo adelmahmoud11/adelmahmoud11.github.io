@@ -603,7 +603,6 @@ $('#lang').onclick=()=>{lang=lang==='ar'?'en':'ar';setLang(lang)};
 const themeBtn=$('#themeBtn');
 function setTheme(t){
   document.documentElement.dataset.theme=t;
-  themeBtn.textContent=t==='light'?'🌙':'☀️';
   const m=document.querySelector('meta[name="theme-color"]');
   if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');
   try{localStorage.setItem('theme',t)}catch(e){}
