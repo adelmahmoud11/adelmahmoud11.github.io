@@ -36,14 +36,13 @@
 <meta name="twitter:image" content="https://adelmah.com/og-image.jpg">
 <link rel="icon" type="image/x-icon" href="https://adelmah.com/favicon.ico">
 <link rel="apple-touch-icon" href="https://adelmah.com/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/plex-400-ar.woff2">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"تحسين معدل التحويل (CRO) — زيادة مبيعاتك من نفس عدد الزوار","description":"دليل عملي لتحسين معدل التحويل: مثال رقمي، أدوات القياس، سبع قواعد لصفحة تحوّل أفضل، وقواعد النماذج والاختبارات.","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":["ar"],"articleSection":"تحسين التحويل","keywords":"تحسين معدل التحويل، CRO، صفحة هبوط، تحويل الزائر لعميل، تحسين الموقع","image":"https://adelmah.com/adel-mahmoud-maraseel-developer.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"Digital Marketing Specialist"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/conversion-rate-guide.html"},"wordCount":524}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"تحسين معدل التحويل (CRO) — زيادة مبيعاتك من نفس عدد الزوار","description":"دليل عملي لتحسين معدل التحويل: مثال رقمي، أدوات القياس، سبع قواعد لصفحة تحوّل أفضل، وقواعد النماذج والاختبارات.","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":["ar"],"articleSection":"تحسين التحويل","keywords":"تحسين معدل التحويل، CRO، صفحة هبوط، تحويل الزائر لعميل، تحسين الموقع","image":"https://adelmah.com/og-image.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"مؤسس ومطور"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/conversion-rate-guide.html"},"wordCount":1385}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/#blog"},{"@type":"ListItem","position":3,"name":"تحسين معدل التحويل CRO"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"تحسين معدل التحويل CRO"}]}
 </script>
 <link rel="stylesheet" href="./style.css">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
@@ -56,6 +55,7 @@
     <a href="https://adelmah.com/" class="brand"><img src="https://adelmah.com/maraseel-logo.webp" alt="عادل محمود" width="32" height="32">Adel Mahmoud</a>
     <div class="nav-end">
       <a href="https://adelmah.com/" class="lang">الموقع الرئيسي ←</a>
+      <a href="https://adelmah.com/blog/" class="lang">كل المقالات</a>
       <button class="lang" id="themeBtn" aria-label="تغيير المظهر">🌓</button>
     </div>
   </div>
@@ -63,15 +63,15 @@
 
 <article class="wrap art">
   <div class="crumbs">
-    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/#blog">مقالات تسويق رقمي</a><span class="sep">/</span><span>تحسين التحويل</span>
+    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/blog/">مقالات تسويق رقمي</a><span class="sep">/</span><span>تحسين التحويل</span>
   </div>
   <header>
     <div class="eyebrow">Conversion Rate Optimization</div>
     <h1>تحسين معدل التحويل (CRO) — زيادة مبيعاتك من نفس عدد الزوار</h1>
     <div class="meta">
-      <img src="https://adelmah.com/adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود" width="34" height="34" loading="lazy">
-      <span>بقلم <b>عادل محمود</b> — أخصائي تسويق رقمي، جدة</span><span class="dot">•</span>
-      <time datetime="2026-11-07">7 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">5</span> دقائق قراءة</span>
+      <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="34" height="34" loading="lazy">
+      <span>بقلم <b>عادل محمود</b> — مؤسس ومطور، جدة</span><span class="dot">•</span>
+      <time datetime="2026-11-07">7 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">7</span> دقائق قراءة</span>
     </div>
     <p class="lead">عندما تريد مبيعات أكثر، يقول لك كثيرون: "زوّد ميزانية الإعلانات". لكن هناك طريق أرخص وأحكم قبل ذلك: أن يحوّل موقعك نسبة أعلى من الزوار الذين يصلونك أصلاً. هذا هو فن تحسين معدل التحويل (CRO) — وفي هذا الدليل منهجه وأدواته العملية.</p>
   </header>
@@ -118,6 +118,44 @@
   </div>
   <p>راقب الفقد بين المراحل وابدأ من حيث تُفقد أكبر نسبة — هذا المكان يعطي مجهودك أكبر مردود من تجريب جوانب لا مشكلة فيها.</p>
 
+  <h2>خطوات عملية: أسبوعان لتأسيس نظام تحسين التحويل</h2>
+  <p>أغلب الحديث عن CRO يسقط عند أول تجربة فعلية، لأن صاحبه يبدأ من التغيير لا من السؤال. الترتيب التالي يمشي في صفحة واحدة فقط — لا في الموقع كله — ويخرجك بعد أسبوعين برقم تعرفه وشكوى واحدة عولجت:</p>
+  <ol class="nlist">
+    <li><b>اختر صفحة واحدة عالية الزيارات:</b> منتجك الأكثر مبيعاً أو الخدمة التي تجلب أغلب طلباتك. كثافة الزوار تعني نتائج أسرع، وتوزيع المجهود على عشر صفحات ضعيفة يبقيك بلا إجابة.</li>
+    <li><b>عرّف التحويل الواحد:</b> نهاية واحدة واضحة: «أتممت الشراء»، «أُرسل الطلب»، «حُجز الموعد». حين يصبح الهدف واحداً يصير معدل التحويل رقماً قابلاً للقياس، وإلا بقي انطباعاً.</li>
+    <li><b>ارسم المسار وقِس الفقد بين مراحله:</b> مشاهدة الصفحة ← إضافة للسلة أو فتح النموذج ← بدء الإكمال ← الإتمام. ستجد أن معظم الخسارة في انتقال واحد منها، وهو بالضبط ما يستحق وقتك. تأكد أولاً أن الأحداث تُسجَّل بأسمائها الصحيحة؛ وإن كانت هذه نقطة ضعفك فابدأ من <a href="https://adelmah.com/blog/google-analytics-4-basics.html">أساسيات Google Analytics 4</a>.</li>
+    <li><b>اجمع أدلة نوعية قبل اقتراح الحل:</b> عشرون تسجيلاً لجلسات حقيقية، خمس رسائل وصلتكم من عملاء لم يكملوا، ثلاثة أسئلة لعملاء أجروا الطلب: «ماذا كدت أن تسأل قبل أن تشتري؟». الأرقام تقول أين، التسجيلات تقول لماذا.</li>
+    <li><b>صُغ فرضية واحدة قابلة للتكذيب:</b> «لأن سعر الشحن يظهر متأخراً، نضعه تحت السعر مباشرة ← يرتفع إتمام السلة». الفرضية الجيدة تذكر السبب والموضع والرقم الذي سيُقاس؛ «نجعل الصفحة أجمل» ليست فرضية.</li>
+    <li><b>نفّذ تغييراً واحداً كبيراً واتركه أسبوعين:</b> لا تخلطه بتغيير آخر في الفترة نفسها، وإلا صارت نتيجتك روايةً لا بيانات.</li>
+    <li><b>قرّر بثلاثة خيارات فقط:</b> إبقاء ثم توسيع لصفحات مشابهة إن تحسن الرقم، تراجع إن ساء، تمديد إن بقي الفرق ضمن ضجيج القياس. اكتب القرار وسببه في ورقة الأسبوع ثم انتقل للفرضية التالية.</li>
+  </ol>
+  <div class="box tip"><b>خط الأساس قبل كل شيء:</b> قبل أن تلمس الصفحة، سجّل في تاريخ واحد ثلاث قيم: الزوار، عمليات الإتمام، ومعدل التحويل الناتج عنهما. هذه الورقة هي التي ستقارن بها بعد أسبوعين؛ بدونها يبقى أي «تحسّن» حكاية، ومعها يصبح قراراً.</div>
+
+  <h2>مثال محسوب: صالون تجميل في الرياض يقلّص نموذج الحجز</h2>
+  <p>نأخذ رقماً مفترضاً لصالون يبيع مواعيد لا منتجات — أرقام المثال تُستبدل بأرقامك، والطريقة لا تتغير. صفحة حجز «جلسة عناية بالبشرة» استقبلت 900 زائر في الشهر، وأكمل الحجز 18 شخصاً. معدل التحويل: 18 ÷ 900 = 2%. ومتوسط قيمة الجلسة 220 ريالاً، فيكون إيراد هذه الصفحة 18 × 220 = 3,960 ريالاً.</p>
+  <p>المشاهدة كشفت أن النموذج ستة حقول منها تاريخ الميلاد ونوع البشرة، وأن كثيرين يكتبون ثم يخرجون عند خطوة «التأكيد برسالة نصية». الإصلاح: الاسم والجوال والتاريخ فقط، والباقي يُسأل لاحقاً. بعد أسبوعين: 900 زائر و27 حجوزاً، أي 27 ÷ 900 = 3%، و27 × 220 = 5,940 ريالاً — <b>تسع حجوزات إضافية و1,980 ريالاً في الشهر من الزوار أنفسهم</b>. تسعة مواعيد زيادة في الشهر تعني يوم عمل إضافياً لصاحبة الصالون، بلا ريال إعلانات جديد.</p>
+  <table class="tbl">
+    <thead>
+      <tr><th>الوضع</th><th>زوار الشهر</th><th>الحجوزات</th><th>معدل التحويل</th><th>الإيراد (جلسة 220)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>نموذج من ستّ حقول</td><td>900</td><td>18</td><td>2%</td><td>3,960</td></tr>
+      <tr><td>نموذج من ثلاث حقول</td><td>900</td><td>27</td><td>3%</td><td>5,940</td></tr>
+      <tr><td>الفارق</td><td>0</td><td>+9</td><td>+1 نقطة</td><td>+1,980</td></tr>
+    </tbody>
+  </table>
+  <p>اقرأ الصف الأخير أولاً: الزوار لم يتغيروا شيئاً. هذه هي المعادلة التي تقارن بها أي «حملة» يقترحها عليك أحد — كم ريال إضافية صنعت مما عندك من زوار، قبل أن تسأل عن زيادة الزوار أنفسهم. وحين تكرّر التحسين على صفحة أخرى، سجّل فيه ساعات عملك: بعض التحسينات يعمل بساعة ويعود بأثر أكبر من ميزانية إعلان، وبعضها العكس.</p>
+  <div class="box warn"><b>تحذير من الاختبار الصغير:</b> مع بضع مئات من الزوار شهرياً، تغيير لون زر أو كلمة في العنوان لا يمكن أن يظهر أثره — الفرق المتوقع أصغر من أن تلتقطه عينة بهذا الحجم. مع ترافيك محدود اختر التغييرات التي تمس قرار الشراء نفسه: السعر، مدة التوصيل، طول النموذج، ووضوح العرض، ثم احسب الفرق يدوياً من رقمَي الزوار والإتمام.</div>
+
+  <h2>أين يقف CRO في خريطة القنوات؟</h2>
+  <p>تحسين التحويل ليس بديلاً عن جلب الزوار، ولا عن ترتيب ما يراه هؤلاء الزوار في السوق. هو الحلقة الوسطى بينهما: إن كنت تصرف على إعلانات وتلاحظ «نقر كثير وشراء قليل» فالمشكلة عندك في الصفحة أو في وجه الإعلان، وابدأ بمراجعة <a href="https://adelmah.com/blog/ecommerce-marketing-mistakes.html">أخطاء تسويق المتاجر الإلكترونية</a> فقد يكون الرابط الذي يهبط عليه الإعلان هو السبب لا الصفحة نفسها. أما إن كانت زياراتك تأتي من بحث فيه نية شراء واضحة — أسماء خدمات مع مدن — فصفحتك المحلية يجب أن تحمل العرض نفسه بوضوح، وهذا ما أفصّله في <a href="https://adelmah.com/blog/local-seo-saudi.html">تحسين الظهور المحلي في السعودية</a>. وفي الحالتين يبقى ترتيب مجهودك داخل خطة واحدة أأثر من تجارب متفرقة، وهو ما يبنيه <a href="https://adelmah.com/blog/digital-marketing-saudi-guide.html">الدليل الشامل للتسويق الرقمي للسوق السعودي</a>؛ وللمزيد من التطبيق العملي على بقية القنوات تابع <a href="https://adelmah.com/blog/">باقي مقالات المدونة</a>.</p>
+
+  <h2>أسئلة شائعة</h2>
+  <h3>هل أحتاج أداة اختبار A/B لأبدأ تحسين التحويل؟</h3>
+  <p>لا. الأداة تأتي بعد أن يكون عندك زوار كافٍ في صفحة واحدة حتى يتحرك الفارق فوق ضجيج القياس، وهذا عند كثير من الأنشطة الصغيرة غير متحقق. البديل العملي لأغلب القراء: طبّق التغيير، واحتفظ برقمي الزوار والإتمام لأسبوعين قبله وأسبوعين بعده، ثم قارن الفترتين لا اليومين. هذه طريقة أنقص دقة من الاختبار المقرون، لكنها تعطي قراراً سليماً في معظم الحالات، وشروطها أن تغيّر شيئاً واحداً وألا تتزامن مع تغيير في مصادر زياراتك.</p>
+  <h3>كم زائراً أحتاج حتى يعتبر الرقم ذا معنى؟</h3>
+  <p>بدل السؤال عن عدد الزوار، اسأل عن عدد التحويلات: المقارنة بين فترتين تصير ذات معنى حين يكون في كل طرف عشرات من عمليات الإتمام لا بضعة، لأن حدثاً أو اثنين يستطيعان قلب النسبة رأساً على عقب. احسبها ببساطة: عشرة إتمامات من 500 زائر تعطي 2% بهامش خطأ واسع، وأفضل ما تفعله حينها تحسين يراه العميل بوضوح لا انتظار «دلالة إحصائية». ولبناء عادة القياس من أول أسبوع، ارجع إلى <a href="https://adelmah.com/blog/digital-marketing-plan-saudi.html">خطة تسويق رقمي للشركات الصغيرة في السعودية</a> التي تبدأ من خط الأساس لا من الميزانية.</p>
+
   <section class="related">
     <span class="eyebrow">Read next</span>
     <h2>مقالات مرتبطة</h2>
@@ -128,10 +166,10 @@
   </section>
 
   <aside class="abox author">
-    <img src="https://adelmah.com/adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود — أخصائي تسويق رقمي" width="72" height="72" loading="lazy">
+    <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود — مؤسس ومطور" width="72" height="72" loading="lazy">
     <div>
       <b>عادل محمود</b>
-      <small>أخصائي تسويق رقمي · مطور علامات تجارية · جدة، السعودية</small>
+      <small>مؤسس ومطور · مطور علامات تجارية · جدة، السعودية</small>
       <p>كاتب المقال — يجمع وجهَي التحويل: هندسة تجعل الصفحة سهلة، وتسويق يجلب لها الزبون — متاح لعمل بدوام كامل بمقر الشركة.</p>
     </div>
   </aside>
@@ -139,7 +177,8 @@
 
 <footer>
   <div class="wrap f-in">
-    <span>© <span id="y" class="num"></span> عادل محمود — أخصائي تسويق رقمي · جدة، السعودية</span>
+    <span>© <span id="y" class="num"></span> عادل محمود — مؤسس ومطور · جدة، السعودية</span>
+    <a href="https://adelmah.com/blog/">كل المقالات</a>
     <a href="https://adelmah.com/">adelmah.com</a>
   </div>
 </footer>

@@ -36,14 +36,13 @@
 <meta name="twitter:image" content="https://adelmah.com/og-image.jpg">
 <link rel="icon" type="image/x-icon" href="https://adelmah.com/favicon.ico">
 <link rel="apple-touch-icon" href="https://adelmah.com/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/plex-400-ar.woff2">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"دليل تحسين محركات البحث (SEO) للمبتدئين — كيف يظهر موقعك في نتائج جوجل","description":"دليل عملي للمبتدئين في تحسين محركات البحث: الزحف والفهرسة والترتيب، الركائز التقنية والمحتوى والروابط، السيو المحلي، وأدوات مجانية.","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":["ar"],"articleSection":"تحسين محركات البحث","keywords":"تحسين محركات البحث، سيو، SEO، اظهار الموقع في جوجل، سيو محلي","image":"https://adelmah.com/adel-mahmoud-maraseel-developer.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"Digital Marketing Specialist"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/seo-guide-arabic.html"},"wordCount":744}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"دليل تحسين محركات البحث (SEO) للمبتدئين — كيف يظهر موقعك في نتائج جوجل","description":"دليل عملي للمبتدئين في تحسين محركات البحث: الزحف والفهرسة والترتيب، الركائز التقنية والمحتوى والروابط، السيو المحلي، وأدوات مجانية.","datePublished":"2026-11-07","dateModified":"2026-11-07","inLanguage":["ar"],"articleSection":"تحسين محركات البحث","keywords":"تحسين محركات البحث، سيو، SEO، اظهار الموقع في جوجل، سيو محلي","image":"https://adelmah.com/og-image.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"مؤسس ومطور"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/seo-guide-arabic.html"},"wordCount":1290}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/#blog"},{"@type":"ListItem","position":3,"name":"دليل تحسين محركات البحث للمبتدئين"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"دليل تحسين محركات البحث للمبتدئين"}]}
 </script>
 <link rel="stylesheet" href="./style.css">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
@@ -56,6 +55,7 @@
     <a href="https://adelmah.com/" class="brand"><img src="https://adelmah.com/maraseel-logo.webp" alt="عادل محمود" width="32" height="32">Adel Mahmoud</a>
     <div class="nav-end">
       <a href="https://adelmah.com/" class="lang">الموقع الرئيسي ←</a>
+      <a href="https://adelmah.com/blog/" class="lang">كل المقالات</a>
       <button class="lang" id="themeBtn" aria-label="تغيير المظهر">🌓</button>
     </div>
   </div>
@@ -63,15 +63,15 @@
 
 <article class="wrap art">
   <div class="crumbs">
-    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/#blog">مقالات تسويق رقمي</a><span class="sep">/</span><span>تحسين محركات البحث</span>
+    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/blog/">مقالات تسويق رقمي</a><span class="sep">/</span><span>تحسين محركات البحث</span>
   </div>
   <header>
     <div class="eyebrow">Search Engine Optimization</div>
     <h1>دليل تحسين محركات البحث (SEO) للمبتدئين — كيف يظهر موقعك في نتائج جوجل</h1>
     <div class="meta">
-      <img src="https://adelmah.com/adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود" width="34" height="34" loading="lazy">
-      <span>بقلم <b>عادل محمود</b> — أخصائي تسويق رقمي، جدة</span><span class="dot">•</span>
-      <time datetime="2026-11-07">7 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">7</span> دقائق قراءة</span>
+      <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="34" height="34" loading="lazy">
+      <span>بقلم <b>عادل محمود</b> — مؤسس ومطور، جدة</span><span class="dot">•</span>
+      <time datetime="2026-11-07">7 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">6</span> دقائق قراءة</span>
     </div>
     <p class="lead">تحسين محركات البحث (SEO) ليس سحراً ولا "أكواد سرية" — إنه فهم طريقة تفكير جوجل ثم خدمة ذلك الفكر بمحتوى أفضل وتجربة أسرع. هذا الدليل يأخذك من الصفر: كيف يجد جوجل موقعك، كيف يقرر ترتيبه، وأول عشرة أشياء تنظفها بنفسك اليوم بلا ميزانية.</p>
   </header>
@@ -144,6 +144,29 @@
   <h2>الجدول الزمني الواقعي — بلا كذب</h2>
   <p>الموقع الجديد في مجال منافس: <b>3-6 أشهر</b> لتبدأ الكلمات الطويلة (3-4 كلمات) بالظهور، ثم يتوسع الترتيب تراكمياً مع المحتوى الثابت. من وعدك "الصفحة الأولى في أسبوع" فللتوفيق معه بالشكّ؛ ما يحدث بهذه السرعة هو الإعلانات المدفوعة فقط. وتوازن الاثنين هو الاستراتيجية الصحيحة: إعلانات تكون النتائج الفورية، وسيو يبني مصدر زوار لا يتوقف.</p>
 
+  <h2>خطوات عملية: أربعة أسابيع تمشي فيها بلا حيرة</h2>
+  <p>السيو يُبنى بالترتيب: زحف، ثم فهرسة، ثم محتوى، ثم ثقة. لا تحاول إصلاح كل شيء دفعة واحدة — وهو أيضاً جزء من خطة أوسع ترتّب أولويات القنوات في <a href="https://adelmah.com/blog/digital-marketing-plan-saudi.html">دليل خطة التسويق الرقمي للشركات الصغيرة</a>.</p>
+  <ol class="nlist">
+    <li><b>الأسبوع 1 — التشخيص:</b> افتح Search Console واسأل ثلاثة أسئلة وسجّل إجاباتها: كم صفحة يزحفها جوجل؟ كم صفحة مفهرسة؟ لأي كلمات يظهر موقعك الآن؟ هذه الأرقام هي نقطة قياس تقدمك، لا إحساسك.</li>
+    <li><b>الأسبوع 2 — التنظيف التقني:</b> ملف sitemap موجود ومسجّل، روابط 404 مصلَحة أو محوّلة، الصور مضغوطة، والموقع سلس على الجوال. هذه الطبقة لا يراها الزائر لكن جوجل يختبرها في كل زيارة.</li>
+    <li><b>الأسبوع 3 — خريطة النوايا:</b> جدول من ثلاثة أعمدة: كلمة العميل، نية البحث (معلومة/مقارنة/شراء)، الصفحة التي تستحقها. صفحة واحدة لكل نية، ولا تكتب صفحة "تقول كل شيء".</li>
+    <li><b>الأسبوع 4 — إعادة صياغة أهم ثلاث صفحات:</b> عنوان title بصيغة الباحث لا بصيغتك الداخلية، H1 واحد، فقرة أولى تجيب السؤال في سطرين، وربط داخلي من الصفحات القوية إلى صفحة الخدمة.</li>
+    <li><b>التقاط أثر ذلك:</b> وصّل GA4 بقناتك الرقمية وعرّف تحويلاتك المهمة (نموذج، اتصال، واتساب) — الخطوات الحية للتركيب في <a href="https://adelmah.com/blog/google-analytics-4-basics.html">شرح أساسيات Google Analytics 4</a>؛ فترتيب بلا قياس تخمين مؤجَّل.</li>
+    <li><b>أول محتوى جديد:</b> مقال يجيب سؤالاً حقيقياً تكرره عملاؤك في الواتساب أو الجوال، بعنوان طبيعي وخطوات مرقمة — ثم كرر الدورة كل شهرين.</li>
+  </ol>
+  <div class="box tip"><b>قاعدة العنوان:</b> لا تكتب "خدماتنا المتكاملة" — اكتب ما يكتبه العميل بإصبعه على الجوال: "تركيب عازل حراري جدة". جوجل لا يقرأ أذواقك، يقرأ كلمات الباحثين.</div>
+
+  <h2>مثال محسوب: ورشة أثاث خشبي في الدمام تصلح ثلاث صفحات</h2>
+  <p>حالة تدريبية بأرقام مفترضة تستبدلها بأرقام لوحة حسابك: صفحة الخدمات في ورشة تفصيل أثاث تظهر في Search Console بـ 2,000 ظهور شهرياً و30 نقرة فقط، لأن عنوانها "منتجاتنا" ومحتواها صور بلا نص. بعد تطبيق الأسابيع الأربعة، صارت للورشة ثلاث صفحات: "تفصيل أثاث على المقاس الدمام" لنية الشراء، وصفحة مدونة "كيف تختار خشب غرفة النوم" لنية المعلومة، وربط داخلي يخدمهما من صفحة المعرض.</p>
+  <p>والحساب الذي يبرر العمل: لو حوّلت النقرات الثلاثون نفسها بنسبة 5% إلى طلبات معاينة — وهذا رقم تفترضه من تجربتك ثم تتحقق منه من سجل طلباتك — فذلك 1.5 طلب شهرياً، أي نحو 18 طلباً في السنة من صفحة واحدة بُنيت مرة واحدة. وبهامش ربح مفترض 800 ريال للطلب، فالعائد 18 × 800 = 14,400 ريال في السنة بلا ريال إعلانات — قارن هذا بنفس العدد من الطلبات عبر إعلان يتوقف لحظة التوقف عن الدفع. لذلك لا تسأل "كم يكلفني السيو؟" بل "كم يتوقف عليّ لو أهملته؟" — وتفصيل بناء الصفحة المحلية القوية في <a href="https://adelmah.com/blog/local-seo-saudi.html">دليل تحسين الظهور المحلي في خرائط Google</a>.</p>
+  <div class="box warn"><b>ما لا يستحق المال:</b> شراء روابط خلفية من شبكات مجهولة أو "باقة سيو" تعد بمئات الروابط شهرياً. قد ترفع الظهور مؤقتاً، لكن حين يكتشفها جوجل يتحول الترتيب إلى تراجع يصعب علاجه. الروابط تُبنى بالذكر الحقيقي في أدلة الأعمال المحلية والمجتمعات التخصصية، لا تُشترى.</div>
+
+  <h2>أسئلة شائعة</h2>
+  <h3>هل أستطيع تنفيذ السيو بنفسي أم أحتاج متخصصاً؟</h3>
+  <p>النصف الأول — التشخيص والتقنية والصفحات الأساسية — تنفذه بيدك بلا وسيط، وهذا الدليل كافٍ للبدء. المتخصص يظهر أثره حين تربط السيو بباقي القنوات: محتوى مقرون بإعلان، وقرار ميزانية بين قناة وأخرى؛ إطار هذا الربط في <a href="https://adelmah.com/blog/digital-marketing-saudi-guide.html">الدليل الشامل للتسويق الرقمي في السعودية</a>.</p>
+  <h3>أيهما أهم لنشاطي المحلي: الترتيب أم الخرائط؟</h3>
+  <p>لنشاط يخدم مدينة واحدة — عيادة، مطعم، ورشة — الخريطة هي باب الدخول الأول: بحث قريب مني ينتهي بطلب اتصال أو اتجاهات قبل أن يقرأ الزائر موقعك. اعمل الاثنين، لكن أعطِ ملف النشاط المحلي وصوره وتقييماته أول الوقت؛ تفاصيله وطريقة بناء صفحات "خدمة + حي" موضحة في مقال السيو المحلي المرتبط أعلاه.</p>
+
   <section class="related">
     <span class="eyebrow">Read next</span>
     <h2>مقالات مرتبطة</h2>
@@ -154,10 +177,10 @@
   </section>
 
   <aside class="abox author">
-    <img src="https://adelmah.com/adel-mahmoud-maraseel-developer.jpg" alt="عادل محمود — أخصائي تسويق رقمي" width="72" height="72" loading="lazy">
+    <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود — مؤسس ومطور" width="72" height="72" loading="lazy">
     <div>
       <b>عادل محمود</b>
-      <small>أخصائي تسويق رقمي · مطور علامات تجارية · جدة، السعودية</small>
+      <small>مؤسس ومطور · مطور علامات تجارية · جدة، السعودية</small>
       <p>كاتب المقال — خلفية هندسية في تطوير المواقع والتطبيقات تجعل تدقيقه التقني للسيو أعمق من متوسط أخصائيي التسويق، ومتاح لعمل بدوام كامل بمقر الشركة.</p>
     </div>
   </aside>
@@ -165,7 +188,8 @@
 
 <footer>
   <div class="wrap f-in">
-    <span>© <span id="y" class="num"></span> عادل محمود — أخصائي تسويق رقمي · جدة، السعودية</span>
+    <span>© <span id="y" class="num"></span> عادل محمود — مؤسس ومطور · جدة، السعودية</span>
+    <a href="https://adelmah.com/blog/">كل المقالات</a>
     <a href="https://adelmah.com/">adelmah.com</a>
   </div>
 </footer>
