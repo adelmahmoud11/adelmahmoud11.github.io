@@ -45,7 +45,7 @@
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"السيو المحلي في السعودية"}]}
 </script>
 <link rel="stylesheet" href="./style.css">
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){document.documentElement.dataset.theme='dark'}</script>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme2')||'light'}catch(e){document.documentElement.dataset.theme='light'}</script>
 </head>
 <body>
 <div class="bg-glow"></div><div class="bg-grid"></div>
@@ -193,8 +193,8 @@
 <script>
 document.querySelector('#y').textContent=new Date().getFullYear();
 const themeBtn=document.querySelector('#themeBtn');
-function setTheme(t){document.documentElement.dataset.theme=t;const m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');try{localStorage.setItem('theme',t)}catch(e){}}
-setTheme(document.documentElement.dataset.theme||'dark');
+function setTheme(t){document.documentElement.dataset.theme=t;const m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');try{localStorage.setItem('theme2',t)}catch(e){}}
+setTheme(document.documentElement.dataset.theme||'light');
 themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light');
 addEventListener('scroll',()=>document.querySelector('#nav').classList.toggle('scrolled',scrollY>10),{passive:true});
 </script>
