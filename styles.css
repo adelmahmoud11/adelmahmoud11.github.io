@@ -1,4 +1,5 @@
 :root{
+  color-scheme:light;
   --bg:#EEF5F4;
   --bg-soft:#E3EFED;
   --surface:#FFFFFF;
@@ -19,7 +20,7 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:100px}
+html{scroll-behavior:smooth;scroll-padding-top:100px;background:#EEF5F4;color-scheme:light}
 
 body{
   margin:0;
@@ -318,7 +319,8 @@ main,.site-header,footer{position:relative}
 }
 .timeline-item:hover{transform:translateY(-3px);border-color:rgba(44,105,100,.2);background:#fff}
 .timeline-item>span{
-  min-width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
+  min-width:36px;height:36px;padding:0 9px;border-radius:11px;display:grid;place-items:center;
+  flex-shrink:0;white-space:nowrap;
   background:rgba(81,165,150,.14);border:1px solid rgba(44,105,100,.2);
   color:var(--accent);font-family:Inter,sans-serif;font-size:10px;font-weight:800
 }
