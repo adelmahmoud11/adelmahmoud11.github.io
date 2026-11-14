@@ -59,6 +59,16 @@ describe('بنية الصفحة', () => {
     expect(doc.querySelector('#services .mock-social'), 'مجسم السوشيال مفقود').toBeTruthy();
     expect(doc.querySelector('#services .mock-chart'), 'مجسم التقارير مفقود').toBeTruthy();
   });
+
+  it('أيقونات التواصل بألوان علاماتها', () => {
+    for (const c of ['mail', 'play', 'li', 'gh']) {
+      expect(doc.querySelectorAll(`.socials a.${c}`).length, `a.${c} في hero وfooter`).toBe(2);
+    }
+    expect(doc.querySelector('linearGradient#plA'), 'تدرجات Google Play مفقودة').toBeTruthy();
+    expect(doc.querySelector('.socials a.play path[fill="url(#plA)"]')).toBeTruthy();
+    expect(styleText).toMatch(/#ea4335/i);
+    expect(styleText).toMatch(/#0a66c2/i);
+  });
 });
 
 describe('نظام الثيم', () => {

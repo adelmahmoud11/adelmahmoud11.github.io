@@ -123,6 +123,15 @@ blockquote.poetry .v2{color:var(--accent)}
 .socials a{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;border:1px solid var(--border);color:var(--muted);transition:.2s}
 .socials a:hover{color:var(--accent);border-color:var(--accent)}
 .socials svg{width:18px;height:18px}
+/* brand colors per platform */
+.socials a.mail{color:#ea4335}
+.socials a.mail:hover{color:#ea4335;border-color:#ea4335;background:rgba(234,67,53,.12)}
+.socials a.li{color:#0a66c2}
+.socials a.li:hover{color:#0a66c2;border-color:#0a66c2;background:rgba(10,102,194,.12)}
+.socials a.gh{color:#e6edf3}
+:root[data-theme="light"] .socials a.gh{color:#24292f}
+.socials a.gh:hover{border-color:#8b949e;background:rgba(139,148,158,.18)}
+.socials a.play:hover{border-color:#00c3ff;background:rgba(0,195,255,.1)}
 
 .profile{position:relative;justify-self:center;width:min(480px,100%)}
 .profile-card{position:relative;border-radius:28px;padding:2px;background:linear-gradient(140deg,rgba(63,212,168,.9),rgba(63,212,168,.08) 35%,rgba(63,212,168,.08) 65%,rgba(232,183,90,.7));box-shadow:0 40px 80px -30px rgba(0,0,0,.9),0 0 70px -20px rgba(63,212,168,.35)}
@@ -360,6 +369,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <!-- icon sprite -->
 <svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="plA" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00d2ff"/><stop offset="1" stop-color="#00a0ff"/></linearGradient>
+    <linearGradient id="plB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffd800"/><stop offset="1" stop-color="#ffbc00"/></linearGradient>
+    <linearGradient id="plC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00f076"/><stop offset="1" stop-color="#00c853"/></linearGradient>
+    <linearGradient id="plD" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff3a44"/><stop offset="1" stop-color="#c31162"/></linearGradient>
+  </defs>
   <symbol id="wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><path d="M12 20h.01"/></symbol>
   <symbol id="mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
   <symbol id="qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v.01M14 21h.01M17 21h4v-4"/></symbol>
@@ -414,10 +429,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <h1 class="rvl hero-name" style="animation-delay:.08s" data-en="Adel Mahmoud — <span class='acc'>Digital Marketing Specialist</span> &amp; Brand Developer">عادل محمود — <span class="acc">أخصائي تسويق رقمي</span> — مطور علامات تجارية</h1>
     <p class="lead rvl" style="animation-delay:.15s" data-en="With an engineering background as a <b>Flutter</b> &amp; <b>Next.js</b> app developer, I build and manage data-driven growth strategies — SEO, Google &amp; Meta campaigns and conversion rate optimization (CRO) — backed by hands-on experience launching digital products from scratch, the latest being <b>Maraseel</b>, free to download in 178 countries on Google Play.">بخلفية هندسية كمطوّر تطبيقات <b>Flutter</b> ومواقع <b>Next.js</b>، أبني وأدير استراتيجيات نمو مبنية على البيانات — تحسين محركات البحث، حملات Google و Meta، وتحسين معدلات التحويل (CRO) — مدعومة بخبرة عملية في إطلاق المنتجات الرقمية من الصفر، آخرها <b>مراسيل</b> المتوفر مجانًا في 178 دولة على Google Play.</p>
     <div class="socials rvl" style="animation-delay:.22s">
-      <a href="https://github.com/adelmahmoud11" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="i f"><use href="#gh"/></svg></a>
-      <a href="https://www.linkedin.com/in/adel-mahmoud-a5740ab2" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="i f"><use href="#li"/></svg></a>
-      <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="me noopener" aria-label="Google Play"><svg class="i f"><use href="#play"/></svg></a>
-      <a href="mailto:adelsat2008@gmail.com" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
+      <a href="https://github.com/adelmahmoud11" target="_blank" rel="me noopener" class="gh" aria-label="GitHub"><svg class="i f"><use href="#gh"/></svg></a>
+      <a href="https://www.linkedin.com/in/adel-mahmoud-a5740ab2" target="_blank" rel="me noopener" class="li" aria-label="LinkedIn"><svg class="i f"><use href="#li"/></svg></a>
+      <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="me noopener" class="play" aria-label="Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="url(#plA)" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="url(#plB)" d="M15 10.8 5.9 1.6l11.7 6.6L15 10.8z"/><path fill="url(#plC)" d="m15 13.2 2.6 2.6-11.7 6.6L15 13.2z"/><path fill="url(#plD)" d="m18.7 15.6-2.4-3.6 2.4-3.2 2.9 1.6c.8.5.8 1.6 0 2.1l-2.9 1.7z"/></svg></a>
+      <a href="mailto:adelsat2008@gmail.com" class="mail" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
     </div>
     <div class="cta rvl" style="animation-delay:.3s">
       <a href="#work" class="btn pri"><svg class="i f"><use href="#layers"/></svg><span data-en="View my work">شاهد أعمالي</span></a>
@@ -761,10 +776,10 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <a href="#top" class="brand"><img src="maraseel-logo.webp" alt="شعار عادل محمود" width="32" height="32">Adel Mahmoud</a>
         <p data-en="Digital marketing specialist and developer of apps and brands — founder of Maraseel, Sada al-Jahiliyya, Hasba and Takhfeedat. Based in Jeddah, KSA.">أخصائي تسويق رقمي ومطوّر تطبيقات وعلامات تجارية — مؤسس مراسيل وصدى الجاهلية وحاسبة وتخفيضات. من جدة، السعودية.</p>
         <div class="socials">
-          <a href="https://github.com/adelmahmoud11" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="i f"><use href="#gh"/></svg></a>
-          <a href="https://www.linkedin.com/in/adel-mahmoud-a5740ab2" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="i f"><use href="#li"/></svg></a>
-          <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="me noopener" aria-label="Google Play"><svg class="i f"><use href="#play"/></svg></a>
-          <a href="mailto:adelsat2008@gmail.com" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
+          <a href="https://github.com/adelmahmoud11" target="_blank" rel="me noopener" class="gh" aria-label="GitHub"><svg class="i f"><use href="#gh"/></svg></a>
+          <a href="https://www.linkedin.com/in/adel-mahmoud-a5740ab2" target="_blank" rel="me noopener" class="li" aria-label="LinkedIn"><svg class="i f"><use href="#li"/></svg></a>
+          <a href="https://play.google.com/store/apps/details?id=com.adelmahmoud.maraseel" target="_blank" rel="me noopener" class="play" aria-label="Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="url(#plA)" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="url(#plB)" d="M15 10.8 5.9 1.6l11.7 6.6L15 10.8z"/><path fill="url(#plC)" d="m15 13.2 2.6 2.6-11.7 6.6L15 13.2z"/><path fill="url(#plD)" d="m18.7 15.6-2.4-3.6 2.4-3.2 2.9 1.6c.8.5.8 1.6 0 2.1l-2.9 1.7z"/></svg></a>
+          <a href="mailto:adelsat2008@gmail.com" class="mail" aria-label="Email"><svg class="i"><use href="#mail"/></svg></a>
         </div>
       </div>
       <div>
