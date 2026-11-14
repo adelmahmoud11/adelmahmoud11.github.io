@@ -12,6 +12,7 @@
   "devDependencies": {
     "@testing-library/dom": "^10.4.2",
     "jsdom": "^31.0.1",
+    "sharp": "^0.35.5",
     "vitest": "^5.1.0"
   }
 }

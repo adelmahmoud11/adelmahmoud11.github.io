@@ -78,6 +78,17 @@ describe('بنية الصفحة', () => {
     expect(styleText).toMatch(/#a259ff/i);
     expect(styleText).toMatch(/#f59e0b/i);
   });
+
+  it('بطاقة حاسبة فيها صورة حقيقية للموقع', () => {
+    const img = doc.querySelector('.pcard a.pc-shot img[src*="hasba-screenshot"]');
+    expect(img, 'صورة الحاسبة مفقودة').toBeTruthy();
+    expect(img.getAttribute('loading')).toBe('lazy');
+    expect(img.getAttribute('decoding')).toBe('async');
+    expect(img.getAttribute('width'), 'عرض الصورة مطلوب لمنع CLS').toBeTruthy();
+    expect(img.getAttribute('height'), 'طول الصورة مطلوب لمنع CLS').toBeTruthy();
+    expect(doc.querySelector('.mini-calc'), 'الويدجت القديم لسه موجود').toBeNull();
+    expect(existsSync(resolve(ROOT, 'hasba-screenshot.webp'))).toBe(true);
+  });
 });
 
 describe('نظام الثيم', () => {
