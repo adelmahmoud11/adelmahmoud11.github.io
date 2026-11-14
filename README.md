@@ -20,7 +20,7 @@ Digital Marketing Specialist & Brand Developer in Jeddah, Saudi Arabia — found
 **SEO** · Google Ads · Meta Ads · CRO · Content & Social · GA4 / Meta Pixel tracking
 
 ## Contact / تواصل
-✉️ [adelsat2008@gmail.com](mailto:adelsat2008@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/adel-mahmoud-a5740ab2) · Available full-time (on-site, Jeddah)
+✉️ [adelsat2008@gmail.com](mailto:adelsat2008@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/adel-mahmoud-a5740ab2) · Based in Jeddah, Saudi Arabia
 
 ---
 *Tech: Flutter · Dart · Next.js · React · Supabase · Firebase · WebRTC · Python · Figma*

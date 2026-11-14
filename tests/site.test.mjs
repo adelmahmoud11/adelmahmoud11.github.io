@@ -148,5 +148,81 @@ describe('التواصل', () => {
 });
 
 describe('محتوى ممنوع', () => {
-  it.todo('لا نص «دوام كامل / وظيفة» في meta وOG والسكيما (خطوة 4)');
+  const banned = /دوام كامل|بدوام|[Ff]ull-time|On-site|فرصة عمل|وظيفة اخصائي|وظيفة مسوق|متاح للعمل فورا|Seeking/;
+
+  it('لا نص «دوام كامل / وظيفة» في meta وOG والسكيما', () => {
+    const pick = re => HTML.match(re)?.[1] ?? '';
+    expect(pick(/<meta name="description" content="([^"]*)"/), 'meta description').not.toMatch(banned);
+    expect(pick(/<meta name="keywords" content="([^"]*)"/), 'meta keywords').not.toMatch(banned);
+    expect(pick(/<meta property="og:description" content="([^"]*)"/), 'og:description').not.toMatch(banned);
+    expect(pick(/<meta name="twitter:description" content="([^"]*)"/), 'twitter:description').not.toMatch(banned);
+    const schema = [...HTML.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map(m => m[1]).join('\n');
+    expect(schema, 'سكيما JSON-LD').not.toMatch(banned);
+  });
+
+  it('سير المؤلف في المقالات بلا نص التوظيف', () => {
+    const slugs = ['choose-digital-marketing-specialist', 'conversion-rate-guide', 'digital-marketing-plan-saudi', 'ecommerce-marketing-mistakes', 'seo-guide-arabic'];
+    for (const slug of slugs) {
+      const html = readFileSync(resolve(ROOT, 'blog', `${slug}.html`), 'utf8');
+      const abox = html.match(/<aside class="abox author">[\s\S]*?<\/aside>/)?.[0] ?? '';
+      expect(abox, `سيرة ${slug}`).not.toMatch(banned);
+    }
+  });
+
+  it('README بلا نص التوظيف', () => {
+    const readme = readFileSync(resolve(ROOT, 'README.md'), 'utf8');
+    expect(readme).not.toMatch(banned);
+  });
+});
+
+describe('المقالات الثلاثة الجديدة (سيو)', () => {
+  const SLUGS = ['search-console-guide', 'core-web-vitals-speed', 'schema-rich-results'];
+  const load = slug => existsSync(resolve(ROOT, 'blog', `${slug}.html`))
+    ? readFileSync(resolve(ROOT, 'blog', `${slug}.html`), 'utf8')
+    : null;
+
+  it('الملفات الثلاثة موجودة في blog/', () => {
+    for (const slug of SLUGS) expect(load(slug), `blog/${slug}.html مفقود`).toBeTruthy();
+  });
+
+  it('كل مقالة: عنوان ووصف غنيان + canonical وOG كامل', () => {
+    for (const slug of SLUGS) {
+      const html = load(slug) ?? '';
+      const title = html.match(/<title>([^<]+)<\/title>/)?.[1] ?? '';
+      expect(title.length, `عنوان ${slug} قصير`).toBeGreaterThan(30);
+      expect(title).toMatch(/عادل محمود/);
+      const desc = html.match(/<meta name="description" content="([^"]+)"/)?.[1] ?? '';
+      expect(desc.length, `وصف ${slug} قصير`).toBeGreaterThanOrEqual(50);
+      expect(html, `canonical ${slug}`).toContain(`<link rel="canonical" href="https://adelmah.com/blog/${slug}.html">`);
+      expect(html).toMatch(/<meta property="og:type" content="article">/);
+      expect(html).toMatch(/<meta property="og:image" /);
+      expect(html).toMatch(/<meta name="twitter:card"/);
+    }
+  });
+
+  it('كل مقالة: BlogPosting وBreadcrumbList بسكيما نظيفة', () => {
+    for (const slug of SLUGS) {
+      const html = load(slug) ?? '';
+      expect(html, `BlogPosting ${slug}`).toMatch(/"@type":"BlogPosting"/);
+      expect(html, `BreadcrumbList ${slug}`).toMatch(/"@type":"BreadcrumbList"/);
+      expect(html).toMatch(/"wordCount":\d+/);
+      expect(html).toMatch(/"jobTitle":"مؤسس ومطور"/);
+      expect(html, `نص توظيف في ${slug}`).not.toMatch(/دوام كامل|بدوام|Seeking|full-time/);
+    }
+  });
+
+  it('كل مقالة: تشابك مع مقالات موجودة وفهرس المدونة', () => {
+    for (const slug of SLUGS) {
+      const html = load(slug) ?? '';
+      expect(html, `رابط فهرس في ${slug}`).toMatch(/href="https:\/\/adelmah\.com\/blog\/">/);
+      const linked = new Set([...html.matchAll(/href="https:\/\/adelmah\.com\/blog\/([a-z-]+)\.html"/g)].map(m => m[1]).filter(s => s !== slug));
+      expect(linked.size, `تشابك ${slug} ضعيف (يحتاج 3+ مقالات)`).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it('المقالات الثلاثة في سيت ماب بتاريخ آخر تعديل 2026-11-14', () => {
+    const sitemap = readFileSync(resolve(ROOT, 'sitemap.xml'), 'utf8');
+    for (const slug of SLUGS) expect(sitemap, `${slug} في السيتب ماب`).toContain(`https://adelmah.com/blog/${slug}.html`);
+    expect(sitemap).toMatch(/<loc>https:\/\/adelmah\.com\/blog\/<\/loc>\s*<lastmod>2026-11-14<\/lastmod>/);
+  });
 });

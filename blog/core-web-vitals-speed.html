@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات | عادل محمود | Adel Mahmoud</title>
+<meta name="description" content="شرح عملي لقياسات Core Web Vitals الثلاثة (LCP وINP وCLS): أين تقيسها، أسباب البطء الشائعة وحلولها بالترتيب الصحيح، أثر السرعة على التحويل والترتيب، وخطة إصلاح تبدأ بها هذا الأسبوع.">
+<meta name="author" content="عادل محمود | Adel Mahmoud">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050d0c">
+<meta name="keywords" content="core web vitals, سرعة الموقع, تسريع موقع ووردبريس, LCP, INP, CLS, pagespeed insights, تحسين سرعة الموقع, تجربة صفحة جوجل">
+<link rel="canonical" href="https://adelmah.com/blog/core-web-vitals-speed.html">
+<link rel="alternate" hreflang="ar" href="https://adelmah.com/blog/core-web-vitals-speed.html">
+<link rel="alternate" hreflang="x-default" href="https://adelmah.com/blog/core-web-vitals-speed.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-11-14T00:00:00Z">
+<meta property="article:modified_time" content="2026-11-14T00:00:00Z">
+<meta property="article:author" content="https://adelmah.com/">
+<meta property="article:section" content="أداء المواقع">
+<meta property="article:tag" content="سرعة الموقع">
+<meta property="article:tag" content="Core Web Vitals">
+<meta property="article:tag" content="أداء">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="عادل محمود">
+<meta property="og:title" content="Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات">
+<meta property="og:description" content="القياسات الثلاثة التي تقرأها جوجل من زوارك الحقيقيين: LCP وINP وCLS — ماذا يعني كل واحد، أسباب المشكلة الشائعة، والحلول بالترتيب الذي يعطي أكبر أثر بأقل جهد.">
+<meta property="og:url" content="https://adelmah.com/blog/core-web-vitals-speed.html">
+<meta property="og:image" content="https://adelmah.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="عادل محمود — مؤسس ومطور">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات">
+<meta name="twitter:description" content="لا مطاردة للدرجة المثالية: بيانات زوارك الحقيقيين هي الحكم — أسباب البطء الشائعة وحلولها بالترتيب.">
+<meta name="twitter:image" content="https://adelmah.com/og-image.jpg">
+<link rel="icon" type="image/x-icon" href="https://adelmah.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://adelmah.com/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/plex-400-ar.woff2">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات","description":"شرح عملي لقياسات سرعة الموقع الثلاثة: أين تقيسها، أسباب البطء الشائعة وحلولها، أثرها على التحويل والترتيب، وخطة إصلاح عملية.","datePublished":"2026-11-14","dateModified":"2026-11-14","inLanguage":["ar"],"articleSection":"أداء المواقع","keywords":"سرعة الموقع، core web vitals، LCP، INP، CLS، pagespeed insights، تحسين الأداء","image":"https://adelmah.com/og-image.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"مؤسس ومطور"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/core-web-vitals-speed.html"},"wordCount":1092}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"Core Web Vitals وسرعة الموقع"}]}
+</script>
+<link rel="stylesheet" href="./style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme2')||'light'}catch(e){document.documentElement.dataset.theme='light'}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6714429426929633" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bg-glow"></div><div class="bg-grid"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="https://adelmah.com/" class="brand"><img src="https://adelmah.com/maraseel-logo.webp" alt="عادل محمود" width="32" height="32">Adel Mahmoud</a>
+    <div class="nav-end">
+      <a href="https://adelmah.com/" class="lang">الموقع الرئيسي ←</a>
+      <a href="https://adelmah.com/blog/" class="lang">كل المقالات</a>
+      <button class="lang" id="themeBtn" aria-label="تغيير المظهر">🌓</button>
+    </div>
+  </div>
+</nav>
+
+<article class="wrap art">
+  <div class="crumbs">
+    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/blog/">مقالات تسويق رقمي</a><span class="sep">/</span><span>سرعة الموقع</span>
+  </div>
+  <header>
+    <div class="eyebrow">Core Web Vitals</div>
+    <h1>Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات</h1>
+    <div class="meta">
+      <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="34" height="34" loading="lazy">
+      <span>بقلم <b>عادل محمود</b> — مؤسس ومطور، جدة</span><span class="dot">•</span>
+      <time datetime="2026-11-14">14 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">6</span> دقائق قراءة</span>
+    </div>
+    <p class="lead">السرعة ليست رفاهية تقنية ولا موضوعاً للمطورين فقط: إن كانت صفحتك تظهر أولاً في جوجل وتحمّل ببطء، فكل زيارة نادرة الأصل تُهدر في الانتظار. «مؤشرات الويب الأساسية» (Core Web Vitals) هي القياسات التي قرأها جوجل من زوارك الحقيقيين لا من اختبارات مختبرية، وهذا المقال يشرحها بلغة العمل: ماذا تقيس، أين تراها، أسباب مشاكلها الشائعة، وخطة إصلاح لا تطارد درجة معينة.</p>
+  </header>
+
+  <h2>القياسات الثلاثة: ماذا يقيس كل واحد بالضبط؟</h2>
+  <ul>
+    <li><b>LCP (أكبر رسم محتوى):</b> متى ظهر أكبر عنصر يراه الزائر — صورة الغلاف أو العنوان الرئيسي — مكتملًا على الشاشة. الهدف: أقل من <span class="num">2.5</span> ثانية.</li>
+    <li><b>INP (تفاعل مع النقر):</b> استجابة الصفحة لأول تفاعلات الزائر: زر، قائمة، حقل إدخال. الهدف: أقل من <span class="num">200</span> جزء من الثانية.</li>
+    <li><b>CLS (إزاحة التصميم):</b> هل تقفز العناصر بعد ظهورها (نص ترتفع أسفل لأن صورة تحمّلت متأخراً؟)؛ الهدف: أقل من <span class="num">0.1</span>.</li>
+  </ul>
+  <p>هذه حدود «جيد» الرسمية التي تعتمدها جوجل؛ لا أرقام هنا مكتشفة من عندي بل حدود معلنة قابلة للتحقق من صفحات جوجل للتقنيات.</p>
+
+  <h2>أين تقيس؟ البيانات الميدانية أولًا والمعملية ثانياً</h2>
+  <p>قاعدة توفّر عليك شهوراً من الجهل: <b>البيانات الميدانية من زوارك الحقيقيين هي الحكم</b>، والاختبارات المختبرية أداة تشخيص لا حكم نهائي:</p>
+  <ul>
+    <li><b>تقرير Core Web Vitals في <a href="https://adelmah.com/blog/search-console-guide.html">سيرش كونسول</a>:</b> يجمع تجربة زوارك الحقيقيين وفق نوع الجهاز، ويظهر أي عناوين خرجت عن «جيد» — ابدأ هنا.</li>
+    <li><b>أداة PageSpeed Insights:</b> تجمع الاثنين: بيانات ميدانية (Chrome UX Report) وفحصاً معملياً (Lighthouse) بترتيب قائمة الإصلاح.</li>
+    <li><b>فحص Lighthouse من المتصفح:</b> مفيد لصفحة بعينها بعد تغيير ما، لكن نتائجه تتأثر بجهازك والاتصال لديك — لا تفارق بين 87 و92 نقطة.</li>
+  </ul>
+  <div class="box tip"><b>قاعدة سريعة:</b> «الدرجة 100» ليست هدفاً تجارياً؛ إن كانت بيانات زوارك الحقيقيين كلها في «جيد» فقد انتهت مهمة الأداء، مهما كانت النقطة المختبرية — ومعظم ما يطارد الـ100 لا يُشعر به الزائر أصلًا.</div>
+
+  <h2>LCP البطيء: أسبابه وحلوله بالترتيب</h2>
+  <p>أكبر عنصر في الشاشة الأولى هو عادة صورة الغلاف (hero) أو شعار كبير أو خط عنوان. الأسباب مرتبة من الأكثر شيوعاً:</p>
+  <ol class="nlist">
+    <li><b>صورة ضخمة تُنزَّل كما هي:</b> صورة مباشرة من كاميرا الحاسوب حجمها ميغابايتات؛ حوّلها بصيغة حديثة (WebP/AVIF) واقتصر الحجم على عرض الظهور — فالصور السكريبتانية في مواقع المتاجر سبب LCP الأول غالباً.</li>
+    <li><b>الصورة محمّلة كسرًا (lazy) وهي أول ما يُرى:</b> التأجيل مفيد لما تحت، لكن صورة الشاشة الأولى يجب أن تُحمّل فوراً (بدون loading="lazy") وبأولوية عالية.</li>
+    <li><b>الخطوط تمنع النص من الظهور:</b> خط واحد كبير بتنسيق أقل (woff2) وتحميل مبكر (preload) وتفكيك خطوط أوزان كثيرة لا تحتاجها.</li>
+    <li><b>العرض الأول يعتمد جافاسكريبت:</b> إن ظهر محتواك الرئيسي بعد تشغيل سكريبت، فكل ثقل السكريبتات يذهب على LCP؛ اجعل أول ما يُرى HTML حقيقياً لا نتيجة رسم بعد التحميل.</li>
+  </ol>
+
+  <h2>INP: عندما تنقر الزائر ولا يحدث شيء</h2>
+  <p>المشكلة ليست التحميل بل <b>الاستجابة</b>: صفحة ظهرت ثم توقف المتصفح عن الرد على النقر لأن جافاسكريبت يأكل الخيط الرئيسي. الأسباب المرتبة:</p>
+  <ul>
+    <li><b>سكريبتات طرف ثالث:</b> الودجتات والدردشة والأدوات الإعلانية — أضفها فقط إن كنت تحتاجها فعلاً، وحمّلها تأجيلًا (defer) لا قبل كل شيء.</li>
+    <li><b>معالج أحداث يعمل حساباً ثقيلاً:</b> فلاتر، حسابات، تحققات تُحسب كاملة عند كل نقرة؛ اجعلها على دفعات صغيرة أو أجّل الحساب الثقيل.</li>
+    <li><b>إطارات إعلانية أو ويدجتات تُعاد رسمها:</b> احفظ مساحتها وأوقف تشغيلها تحت الطيّ.</li>
+  </ul>
+
+  <h2>CLS: القفزات التي تكسر الثقة قبل أن تُكسب</h2>
+  <p>أنت تكاد تنقر زر «اشترِ» فترتفع الصفحة تحتك وتنقر «حذف» بالخطأ — هذه إزاحة تصميم تكلفك نقرات موهوبة. الأسباب وحلولها:</p>
+  <ul>
+    <li><b>صور بلا أبعاد:</b> كل وسم صورة (img) يحتاج <b>width</b> و<b>height</b> أو نسبة أبعاد في CSS حتى يحجز المتصفح مكانها قبل التحميل.</li>
+    <li><b>الخطوط تُستبدل بخط آخر مقاسه مختلف:</b> اختر خطاً بديلاً (fallback) مقارباً في قياساته، أو استخدم font-display مع أبعاد متقاربة.</li>
+    <li><b>إعلانات وودجتات تُدرج بعد التحميل:</b> احفظ لها مساحة ثابتة منذ البداية.</li>
+    <li><b>محتوى يُضاف فوق ما يقرؤه الزائر:</b> رسائل الكوكيز والبانر — احجز مكانها في التخطيط لا أن تدفع الصفحة.</li>
+  </ul>
+
+  <h2>لماذا تعنيك السرعة قبل جوجل؟ لأنها مبيعات</h2>
+  <p>لا تدخل هذا الموضوع بميدالية تقنية؛ الزائر الذي انتظر ثم حاول يغادر قبل أن يرى عرضك = حصة مفقودة بلا تكلفة إعلانية أعلى. ولاستعمال ما قلناه بعمل: كل ثانية تأخير في العرض تُقطع بها سلسلة النية التي جاء بها الزائر، وكل قفزة في التخطيط تُضربها ثقته قبل أن يقرأ ما عندك. لذا فإن تحسين السرعة جزء من شغل <a href="https://adelmah.com/blog/conversion-rate-guide.html">تحسين معدل التحويل</a> لا من شغل «الحاسب» فقط — والسرعة تضاعف أثر ما تبنيه بقية <a href="https://adelmah.com/blog/seo-guide-arabic.html">أسس السيو</a>.</p>
+  <p>أما عن الترتيب فالوضع صريح: تجربة الصفحة واحدة من إشارات ترتيب جوجل، لكنها لا ترفع محتوى ضعيفاً؛ تعطي فارق الأفضلية بين صفحتين متكافئتين في المحتوى — فلا تعاملها كبديل عن الشغل على المحتوى والنيّة.</p>
+
+  <h2>خطة إصلاح تبدأ بها هذا الأسبوع</h2>
+  <ol class="nlist">
+    <li>افتح تقرير Core Web Vitals في سيرش كونسول وسجّل ما هو خارج «جيد».</li>
+    <li>اختبر الصفحات المرتفعة زيارةً في PageSpeed Insights واقرأ قائمة «الفرص» أعلاها.</li>
+    <li>اضغط صور الغلاف وقوائم المنتجات (WebP + مقاسات صحيحة) — أغرب أثر سريع تجده هنا.</li>
+    <li>أزل lazy عن صور الشاشة الأولى وأضف أبعاداً لكل الصور.</li>
+    <li>قلّل سكريبتات الطرف الثالث وحمّلها تأجيلًا.</li>
+    <li>طبّق الخط بتنسيق woff2 واحمِ مكان العناوين من القفز.</li>
+    <li>أعد الاختبار بعد أسبوعين لا بعد ساعة: البيانات الميدانية تحتاج زواراً جدداً.</li>
+  </ol>
+
+  <h2>أخطاء شائعة في تحسين السرعة</h2>
+  <div class="cmp">
+    <div class="crow"><div class="ck">مطاردة الدرجة المختبرية</div><div class="cv">إصلاحات لفوز بنقطة لا تشعر بها أيدي الناس <small>ما يعنيك: بيانات زوارك الحقيقيين في سيرش كونسول</small></div></div>
+    <div class="crow"><div class="ck">إضافة إضافة إضافية</div><div class="cv">إضافة تسريع فوق عشر إضافات تحمل سكريبتاتها <small>أصحّ: تقليل مصادر الثقل قبل أدواته</small></div></div>
+    <div class="crow"><div class="ck">استبدال CDN بالمشاكل</div><div class="cv">شبكة توزيع فوق استضافة بطيئة أصلًا وصور ضخمة <small>الترتيب: صور مضغوطة ثم سكريبتات أقل ثم CDN</small></div></div>
+  </div>
+
+  <h2>أسئلة شائعة</h2>
+  <h3>هل استضافة أغلى تجعل موقعي أسرع؟</h3>
+  <p>الاستضافة تأثيرها عند سقف الاستخدام أو سوء خياراتها الصريحة، لكن أغلب بطء المواقع الصغيرة مصدره الصور الضخمة والسكريبتات والخطوط قبل الاستضافة؛ ابدأ من الحمولة ثم انظر للمخدم. ولمتابعة أثر ما تفعله على ظهورك والزحف، فمكانك <a href="https://adelmah.com/blog/search-console-guide.html">دليل سيرش كونسول</a>.</p>
+  <h3>صفحة معقّدة كثيرة الوسائط: هل تقبل بهذه القياسات؟</h3>
+  <p>المواقع الثرية بالمحتوى تُختبر بنفس الحدود؛ الحل أن يحصل أول ما يُرى على أولوية التحميل وأن يتأخر الباقي، لا أن تُخفف الجودة إلى أن تصبح الصفحة بلا مميزات. وتذكر: تقرير الأداء الميداني يقسّم البيانات حسب الأجهزة — إن كان غالبا جمهورك جوالًا فكُل قرار إصلاح يُختبر على جوال شائع قبل أن يُختبر على حاسوبك.</p>
+
+  <section class="related">
+    <span class="eyebrow">Read next</span>
+    <h2>مقالات مرتبطة</h2>
+    <div class="rposts">
+      <a class="rpost" href="https://adelmah.com/blog/search-console-guide.html"><small>قياس</small><h3>دليل جوجل سيرش كونسول العملي</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/conversion-rate-guide.html"><small>تحويل</small><h3>دليل تحسين معدل التحويل — من الزيارة إلى العميل</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/seo-guide-arabic.html"><small>سيو</small><h3>دليل تحسين محركات البحث بالعربية</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/ecommerce-marketing-mistakes.html"><small>متاجر</small><h3>7 أخطاء تسويق رقمي تقتل مبيعات متجرك الإلكتروني</h3></a>
+    </div>
+  </section>
+
+  <aside class="abox author">
+    <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="72" height="72" loading="lazy">
+    <div>
+      <b>عادل محمود</b>
+      <small>مؤسس ومطور · جدة، السعودية</small>
+      <p>يعمل بين التسويق الرقمي وتطوير العلامات التجارية في جدة، ويكتب ما يُطبَّق فعلاً: قرارات تُقاس من لوحات المنصات نفسها لا من وعود.</p>
+    </div>
+  </aside>
+</article>
+
+<footer>
+  <div class="wrap f-in">
+    <span>© <span id="y" class="num"></span> عادل محمود — مؤسس ومطور · جدة، السعودية</span>
+    <a href="https://adelmah.com/blog/">كل المقالات</a>
+    <a href="https://adelmah.com/">adelmah.com</a>
+  </div>
+</footer>
+
+<script>
+document.querySelector('#y').textContent=new Date().getFullYear();
+const themeBtn=document.querySelector('#themeBtn');
+function setTheme(t){document.documentElement.dataset.theme=t;const m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');try{localStorage.setItem('theme2',t)}catch(e){}}
+setTheme(document.documentElement.dataset.theme||'light');
+themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light');
+addEventListener('scroll',()=>document.querySelector('#nav').classList.toggle('scrolled',scrollY>10),{passive:true});
+</script>
+</body>
+</html>

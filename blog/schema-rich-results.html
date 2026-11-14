@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>البيانات المنظمة (Schema) والنتائج الغنية — كيف تبرز نتيجتك في جوجل | عادل محمود | Adel Mahmoud</title>
+<meta name="description" content="دليل عملي للبيانات المنظمة (Schema / JSON-LD) والنتائج الغنية في جوجل: الأنواع التي تناسب مواقعك ومتاجرك، قواعد جوجل الصارمة وما يُعاقب عليه، خطوات التنفيذ والتحقق بالأدوات، وتقرير القياس في سيرش كونسول.">
+<meta name="author" content="عادل محمود | Adel Mahmoud">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050d0c">
+<meta name="keywords" content="schema, البيانات المنظمة, نتائج غنية, rich results, json-ld, rich results test, schema markup, سكيما, نتائج جوجل">
+<link rel="canonical" href="https://adelmah.com/blog/schema-rich-results.html">
+<link rel="alternate" hreflang="ar" href="https://adelmah.com/blog/schema-rich-results.html">
+<link rel="alternate" hreflang="x-default" href="https://adelmah.com/blog/schema-rich-results.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-11-14T00:00:00Z">
+<meta property="article:modified_time" content="2026-11-14T00:00:00Z">
+<meta property="article:author" content="https://adelmah.com/">
+<meta property="article:section" content="سيو تقني">
+<meta property="article:tag" content="البيانات المنظمة">
+<meta property="article:tag" content="Schema">
+<meta property="article:tag" content="نتائج غنية">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="عادل محمود">
+<meta property="og:title" content="البيانات المنظمة (Schema) والنتائج الغنية — كيف تبرز نتيجتك في جوجل">
+<meta property="og:description" content="نتيجتك ونتيجة منافسك تُعرَضان في المكان نفسه — فمن يأخذ النقرة؟ لغة إضافية تُخبر الآلة بما فيها صفحتك بدقة: أنواع النتائج الغنية المناسبة لك، القواعد الصارمة، والتنفيذ بأدوات التحقق المجانية.">
+<meta property="og:url" content="https://adelmah.com/blog/schema-rich-results.html">
+<meta property="og:image" content="https://adelmah.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="عادل محمود — مؤسس ومطور">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="البيانات المنظمة (Schema) والنتائج الغنية — كيف تبرز نتيجتك في جوجل">
+<meta name="twitter:description" content="أنواع النتائج الغنية التي تناسب موقعك، قواعد جوجل، التنفيذ والتحقق — بلا علامات وهمية تُعاقب عليك.">
+<meta name="twitter:image" content="https://adelmah.com/og-image.jpg">
+<link rel="icon" type="image/x-icon" href="https://adelmah.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://adelmah.com/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/plex-400-ar.woff2">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"البيانات المنظمة (Schema) والنتائج الغنية — كيف تبرز نتيجتك في جوجل","description":"دليل عملي للبيانات المنظمة والنتائج الغنية: الأنواع المناسبة، قواعد جوجل، التنفيذ والتحقق، والقياس من سيرش كونسول.","datePublished":"2026-11-14","dateModified":"2026-11-14","inLanguage":["ar"],"articleSection":"سيو تقني","keywords":"البيانات المنظمة، schema، نتائج غنية، json-ld، rich results، سكيما","image":"https://adelmah.com/og-image.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"مؤسس ومطور"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/schema-rich-results.html"},"wordCount":969}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"البيانات المنظمة والنتائج الغنية"}]}
+</script>
+<link rel="stylesheet" href="./style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme2')||'light'}catch(e){document.documentElement.dataset.theme='light'}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6714429426929633" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bg-glow"></div><div class="bg-grid"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="https://adelmah.com/" class="brand"><img src="https://adelmah.com/maraseel-logo.webp" alt="عادل محمود" width="32" height="32">Adel Mahmoud</a>
+    <div class="nav-end">
+      <a href="https://adelmah.com/" class="lang">الموقع الرئيسي ←</a>
+      <a href="https://adelmah.com/blog/" class="lang">كل المقالات</a>
+      <button class="lang" id="themeBtn" aria-label="تغيير المظهر">🌓</button>
+    </div>
+  </div>
+</nav>
+
+<article class="wrap art">
+  <div class="crumbs">
+    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/blog/">مقالات تسويق رقمي</a><span class="sep">/</span><span>البيانات المنظمة</span>
+  </div>
+  <header>
+    <div class="eyebrow">Schema · Rich Results</div>
+    <h1>البيانات المنظمة (Schema) والنتائج الغنية — كيف تبرز نتيجتك في جوجل</h1>
+    <div class="meta">
+      <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="34" height="34" loading="lazy">
+      <span>بقلم <b>عادل محمود</b> — مؤسس ومطور، جدة</span><span class="dot">•</span>
+      <time datetime="2026-11-14">14 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">5</span> دقائق قراءة</span>
+    </div>
+    <p class="lead">نتيجتك ونتيجة منافسك قد تُعرَضان في المكان نفسه من صفحة جوجل — فمن يأخذ النقرة؟ غالباً من تظهر نتيجته بصورة أغنى: نجوم تقييم، أسئلة قابلة للفتح من النتيجة نفسها، مسار الصفحات، أو السعر والتوفر. هذه الشوكلاتة لا تصنعها من الطباعة؛ بل من «البيانات المنظمة» (Structured Data) — لغة إضافية تكتبها في صفحتك لتُخبر الآلة بما فيها بدقة. هذا الدليل عملي: ماذا تستخدم، ماذا تجنب، وكيف تتحقق قبل أن تفرح.</p>
+  </header>
+
+  <h2>ما الذي تفعله البيانات المنظمة فعلًا؟</h2>
+  <p>عندما يزحف جوجل صفحتك يقرأ نصاً؛ والبيانات المنظمة تضيف طبقة توصيف واضحة — <b>هذه صفحة منتج، سعره كذا، توفره كذا، عنده تقييمات</b> — بصيغة معتمدة (Schema.org) وتقنية تُسمّى JSON-LD تكتب في وسم سكريبت داخل رأس الصفحة. فوائدها الحقيقية:</p>
+  <ul>
+    <li><b>أهلية النتائج الغنية:</b> نجوم التقييم، الأسئلة الشائعة الموسّعة، مسار التنقل، التفاصيل التجارية — كلها تُبنى من بيانات منظمة صحيحة.</li>
+    <li><b>فهم أنظف لعلاقاتك:</b> اسمك، موقعك، تخصصك، ومؤلفي مقالاتك — وهذا يخدم «كيانات» مثل بطاقة المعرفة.</li>
+    <li><b>وضوح للذكاء الاصطناعي والبحث الصوتي:</b> الأنظمة التي تُلخّص وتجيب تستفيد من البيانات الموصوفة لأنها لا تترك مجالاً للهم.</li>
+  </ul>
+  <p>والنقطة التي يستحق التأكيد: البيانات المنظمة ليست عامل ترتيب مباشراً؛ إنها ترفع <b>جاذبية النتيجة وقابليتها للنقر</b>، وهي عندها من مسألة السيو الأوسع التي شرحتها في <a href="https://adelmah.com/blog/seo-guide-arabic.html">دليل تحسين محركات البحث</a> — ترتيب أفضل بلا نتيجة واضحة يخسر النقرات لأضعف منك.</p>
+
+  <h2>الأنواع التي تستحق عملها في السوق العربي</h2>
+  <p>لا تنفّذ كل ما تراه في قوائم الأجانب؛ هذه الأنواع ذات أثر حقيقي لموقع عربي أو متجر:</p>
+  <ul>
+    <li><b>LocalBusiness (نشاط محلي):</b> الاسم، العنوان، الفئة، التواصل، الساعات — تكمّل شغل ملف جوجل التجاري الذي فصّلته في <a href="https://adelmah.com/blog/local-seo-saudi.html">دليل السيو المحلي في السعودية</a>.</li>
+    <li><b>Product (منتج):</b> اسم وسعر وتوفر وصور — أساس ظهور تفاصيل المنتج في نتائج التسوق والبحث؛ وإن أضفت تقييمات فلتكن حقيقية من زبائنك فعلاً.</li>
+    <li><b>Article / BlogPosting (مقالة):</b> عنوان، نشر، تحديث، مؤلف، صورة بارزة — هذا هو النوع الذي تستخدمه مدونتك أنت في كل مقال.</li>
+    <li><b>FAQPage (أسئلة شائعة):</b> أسئلة تظهر موسّعة تحت نتيجتك وتأكل مساحة أفق الشاشة من منافسك.</li>
+    <li><b>BreadcrumbList (مسار التنقل):</b> تُظهر المسار بدل الرابط الطويل — أجمل في العرض وتساعد الفهم.</li>
+    <li><b>Organization / Person:</b> تعريفك أنت وصفتك وقنواتك — يربط حضورك في الموقع بحساباتك ومشاريعك.</li>
+  </ul>
+
+  <h2>القواعد الصارمة: ما يُرفض وما يُعاقب عليه</h2>
+  <p>جوجل صارم جداً هنا لأن النتائج الغنية تُبنى على ثقة؛ وقراءة دليل السياسات قبل التنفيذ أرخص من استعادتها:</p>
+  <ul>
+    <li><b>لا محتوى غير مرئي للمستخدم:</b> كل ما تعلنه في البيانات يجب أن يكون قابلاً للرؤية أو الوصول من الصفحة نفسها — سؤال وجواب في FAQ يجب أن يُقرأ فعلاً في الصفحة.</li>
+    <li><b>لا تقييمات مزيفة:</b> نجوم من مواضع «فحص» لم تستحقها، أو تقييمات نقلتها من غير صفحتك — سبب معروف لإزالة النتائج الغنية أو جزاء الموقع كله.</li>
+    <li><b>لا بيانات مغلوطة:</b> سعر يظهر رخيصاً في البيانات ويغلي في الصفحة، أو توفر كاذب — يُخفض ثقة الآلة بك.</li>
+    <li><b>بديل لا زخرفة:</b> نوع واحد صحيح يفيد أكثر من سبعة أنواع مختلطة تصف صفحتك كأنها مستودع.</li>
+  </ul>
+  <div class="box warn"><b>تحذير:</b> لا تنسخ سكريبت schema من موقع آخر وأنت مغمض العينين؛ سكريبت يصف محتوى لا يوجد في صفحتك يرفع تحذيراً في تقرير الأداة، وقد يفقدك أهلية النتائج الغنية على كل الموقع — التنفيذ والتحقق من خطوتين يفصلانهما.</div>
+
+  <h2>التنفيذ بخمس خطوات</h2>
+  <ol class="nlist">
+    <li><b>اختر نوعاً واحداً يخدم صفحة واحدة:</b> منتجات لمتجر، أسئلة شائعة لصفحة خدمة، مقال للمدونة.</li>
+    <li><b>اكتب JSON-LD في رأس الصفحة:</b> بصيغة سكريبت واحدة لا تسكريبتات متفرقة؛ حدّد «@type» وبياناته من محتوى الصفحة نفسها لا من ذاكرتك.</li>
+    <li><b>اعرضه من أدوات التحقق:</b> «اختبار النتائج الغنية» (Rich Results Test) من جوجل، و«Schema Markup Validator» لصحة الصيغة — أصلح ما يشيرون إليه قبل النشر.</li>
+    <li><b>اربط الصفحات بعناصرها الأصلية:</b> كل تقييم مصدره صفحة تقييم حقيقية، كل سؤال مصدره نص في الصفحة.</li>
+    <li><b>تابع تقريرها في سيرش كونسول:</b> قسم «التحسينات» يعرض أنواع البيانات المكتشفة، الصالحة والمخطئة، وعدد صفحاتها — وأخطاء تطالبك بتصحيح ثم «إعادة تحقق».</li>
+  </ol>
+  <p>ولمتابعة أن صفحاتك فُهرست أصلًا قبل أن تتكلم عن نتائجها الغنية، فهذا شغل <a href="https://adelmah.com/blog/search-console-guide.html">دليل سيرش كونسول</a> — فلا معنى لبيانات منظمة على صفحة لم تدخل المخزن بعد.</p>
+
+  <h2>أخطاء شائعة تدمر النتائج الغنية</h2>
+  <div class="cmp">
+    <div class="crow"><div class="ck">زخرفة كل شيء</div><div class="cv">ستة أنواع سكريبتات في صفحة واحدة <small>نوع واحد صحيح يفوق سبعة متضاربة</small></div></div>
+    <div class="crow"><div class="ck">بيانات لا تراها العين</div><div class="cv">نجوم وأسئلة معلنة والصفحة لا تظهرها <small>سياسة صريحة: ما في الصفحة هو ما تعلنه</small></div></div>
+    <div class="crow"><div class="ck">نشر بلا تحقق</div><div class="cv">خطأ JSON واحد يُسقط كل السكريبت صامتاً <small>أداتا التحقق المجانية قبل الإفراج وبعده</small></div></div>
+  </div>
+  <div class="box tip"><b>قاعدة سريعة:</b> إن أصلحت خطأً في البيانات المنظمة فلا تنظر لنتيجتها في جوجل فوراً — تقرير «التحسينات» في سيرش كونسول هو مرجع التصحيح، وجوجل يعيد فحص الصفحات وفق جدوله.</div>
+
+  <h2>أسئلة شائعة</h2>
+  <h3>البيانات المنظمة على ووردبريس: إضافة أم سكريبت يدوي؟</h3>
+  <p>الإضافات تُخرج المهم التكراري (منتجات، مقالات) لكنها تُخرج أيضاً أخطاء جماعية إن أخطأت إعدادها؛ القرار لا يكون «إضافة أم لا» بل «مَن يتحقق» — أي الطريقين يمرّان إجبارياً بـ Rich Results Test، والفرق أن يدويّاً يمنحك تحكماً كاملاً في صفحاتك المهمة. والسرعة بعد التركيب لها ذيل أيضاً: الإضافات تضيف حمولة تعالجها في <a href="https://adelmah.com/blog/core-web-vitals-speed.html">دليل سرعة الموقع</a>.</p>
+  <h3>كم أحتاج من النتائج الغنية؟ وهل تحسّن ترتيبي؟</h3>
+  <p>اختر ما يطابق نوع صفحاتك: متجر يفتح بمنتجاته، مدونة بمقالاتها، نشاط محلي ببياناته، وصفحة خدمة بأسئلتها الشائعة — وترتيبك يتحسن غيابياً عبر نقرات أفضل وإشارات تفاعل، لا بوسم من تلقاء نفسه. إن أردت البروتوكول الذي يُبنى فيه كل شيء بالترتيب الصحيح، فراجع <a href="https://adelmah.com/blog/local-seo-saudi.html">دليل السيو المحلي</a> إن كان نشاطك بمكان فعلي، أو <a href="https://adelmah.com/blog/seo-guide-arabic.html">الدليل للمبتدئين</a> للأساس.</p>
+
+  <section class="related">
+    <span class="eyebrow">Read next</span>
+    <h2>مقالات مرتبطة</h2>
+    <div class="rposts">
+      <a class="rpost" href="https://adelmah.com/blog/search-console-guide.html"><small>قياس</small><h3>دليل جوجل سيرش كونسول العملي</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/local-seo-saudi.html"><small>سيو محلي</small><h3>تحسين محركات البحث المحلي في السعودية</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/core-web-vitals-speed.html"><small>سرعة</small><h3>Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/seo-guide-arabic.html"><small>سيو</small><h3>دليل تحسين محركات البحث بالعربية</h3></a>
+    </div>
+  </section>
+
+  <aside class="abox author">
+    <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="72" height="72" loading="lazy">
+    <div>
+      <b>عادل محمود</b>
+      <small>مؤسس ومطور · جدة، السعودية</small>
+      <p>يعمل بين التسويق الرقمي وتطوير العلامات التجارية في جدة، ويكتب ما يُطبَّق فعلاً: قرارات تُقاس من لوحات المنصات نفسها لا من وعود.</p>
+    </div>
+  </aside>
+</article>
+
+<footer>
+  <div class="wrap f-in">
+    <span>© <span id="y" class="num"></span> عادل محمود — مؤسس ومطور · جدة، السعودية</span>
+    <a href="https://adelmah.com/blog/">كل المقالات</a>
+    <a href="https://adelmah.com/">adelmah.com</a>
+  </div>
+</footer>
+
+<script>
+document.querySelector('#y').textContent=new Date().getFullYear();
+const themeBtn=document.querySelector('#themeBtn');
+function setTheme(t){document.documentElement.dataset.theme=t;const m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');try{localStorage.setItem('theme2',t)}catch(e){}}
+setTheme(document.documentElement.dataset.theme||'light');
+themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light');
+addEventListener('scroll',()=>document.querySelector('#nav').classList.toggle('scrolled',scrollY>10),{passive:true});
+</script>
+</body>
+</html>

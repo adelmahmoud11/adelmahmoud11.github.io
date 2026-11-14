@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل Search Console العملي — افحص فهرسة موقعك وأداءه | عادل محمود | Adel Mahmoud</title>
+<meta name="description" content="دليل عملي لأداة جوجل سيرش كونسول (Search Console): إثبات الملكية مرة واحدة، قراءة تقرير الأداء شهراً بشهر، فحص الفهرسة وطلبها، خرائط الموقع، تجربة الصفحة، والروابط — مع خطة صيانة شهرية بسيطة.">
+<meta name="author" content="عادل محمود | Adel Mahmoud">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#050d0c">
+<meta name="keywords" content="سيرش كونسول, google search console, فحص الفهرسة, طلب فهرسة صفحة, تقرير الأداء, خرائط الموقع sitemap, الصفحة لم تُفهرس, تجربة الصفحة, أدوات جوجل المجانية">
+<link rel="canonical" href="https://adelmah.com/blog/search-console-guide.html">
+<link rel="alternate" hreflang="ar" href="https://adelmah.com/blog/search-console-guide.html">
+<link rel="alternate" hreflang="x-default" href="https://adelmah.com/blog/search-console-guide.html">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-11-14T00:00:00Z">
+<meta property="article:modified_time" content="2026-11-14T00:00:00Z">
+<meta property="article:author" content="https://adelmah.com/">
+<meta property="article:section" content="سيو تقني">
+<meta property="article:tag" content="سيرش كونسول">
+<meta property="article:tag" content="Search Console">
+<meta property="article:tag" content="فهرسة">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:site_name" content="عادل محمود">
+<meta property="og:title" content="دليل Search Console العملي — افحص فهرسة موقعك وأداءه">
+<meta property="og:description" content="أداة جوجل المجانية التي تريك ما يحدث فعلًا: ماذا فُهرس من موقعك، بأي كلمات تظهر، ومن ينقر. كيف تضبطها مرة واحدة ثم تقرأها شهراً بشهر دون أن تضيع في التقارير.">
+<meta property="og:url" content="https://adelmah.com/blog/search-console-guide.html">
+<meta property="og:image" content="https://adelmah.com/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="عادل محمود — مؤسس ومطور">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="دليل Search Console العملي — افحص فهرسة موقعك وأداءه">
+<meta name="twitter:description" content="إثبات الملكية، تقرير الأداء، فحص الفهرسة، خرائط الموقع، وروتين صيانة شهري — بلا تعقيد وبلا أرقام موهومة.">
+<meta name="twitter:image" content="https://adelmah.com/og-image.jpg">
+<link rel="icon" type="image/x-icon" href="https://adelmah.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://adelmah.com/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../fonts/plex-400-ar.woff2">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"دليل جوجل سيرش كونسول العملي — افحص فهرسة موقعك وأداءه","description":"دليل عملي لأداة سيرش كونسول: إثبات الملكية، تقرير الأداء، فحص الفهرسة وطلبها، خرائط الموقع، تجربة الصفحة، الروابط، وروتين صيانة شهري.","datePublished":"2026-11-14","dateModified":"2026-11-14","inLanguage":["ar"],"articleSection":"سيو تقني","keywords":"سيرش كونسول، فحص الفهرسة، تقرير الأداء، خرائط الموقع، تجربة الصفحة","image":"https://adelmah.com/og-image.jpg","author":{"@type":"Person","name":"عادل محمود","alternateName":"Adel Mahmoud","url":"https://adelmah.com/","jobTitle":"مؤسس ومطور"},"publisher":{"@type":"Person","name":"عادل محمود","url":"https://adelmah.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://adelmah.com/blog/search-console-guide.html"},"wordCount":1409}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"عادل محمود","item":"https://adelmah.com/"},{"@type":"ListItem","position":2,"name":"مقالات تسويق رقمي","item":"https://adelmah.com/blog/"},{"@type":"ListItem","position":3,"name":"دليل Search Console العملي"}]}
+</script>
+<link rel="stylesheet" href="./style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme2')||'light'}catch(e){document.documentElement.dataset.theme='light'}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6714429426929633" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bg-glow"></div><div class="bg-grid"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="https://adelmah.com/" class="brand"><img src="https://adelmah.com/maraseel-logo.webp" alt="عادل محمود" width="32" height="32">Adel Mahmoud</a>
+    <div class="nav-end">
+      <a href="https://adelmah.com/" class="lang">الموقع الرئيسي ←</a>
+      <a href="https://adelmah.com/blog/" class="lang">كل المقالات</a>
+      <button class="lang" id="themeBtn" aria-label="تغيير المظهر">🌓</button>
+    </div>
+  </div>
+</nav>
+
+<article class="wrap art">
+  <div class="crumbs">
+    <a href="https://adelmah.com/">عادل محمود</a><span class="sep">/</span><a href="https://adelmah.com/blog/">مقالات تسويق رقمي</a><span class="sep">/</span><span>سيرش كونسول</span>
+  </div>
+  <header>
+    <div class="eyebrow">Search Console</div>
+    <h1>دليل جوجل سيرش كونسول العملي — افحص فهرسة موقعك وأداءه</h1>
+    <div class="meta">
+      <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="34" height="34" loading="lazy">
+      <span>بقلم <b>عادل محمود</b> — مؤسس ومطور، جدة</span><span class="dot">•</span>
+      <time datetime="2026-11-14">14 نوفمبر 2026</time><span class="dot">•</span><span><span class="num">8</span> دقائق قراءة</span>
+    </div>
+    <p class="lead">تخيل أنك تدير متجراً ولا تعرف من يدخل إليه ولا ماذا يطلب — هذا ما يفعله أصحاب المواقع الذين يهملون «جوجل سيرش كونسول» (Google Search Console). الأداة المجانية تريك ما يحدث فعلًا: ماذا فُهرس من صفحاتك، بأي كلمات ظهرت، ومن نقر، وأين تعثرت الصفحات. كتبت هذا الدليل ليكون مرجعك العملي: ضبطٌ مرة واحدة، ثم روتين شهر لا يستهلك يومك.</p>
+  </header>
+
+  <h2>ما الذي تعطيك الأداة ولا يعطيك أي عدّاد آخر؟</h2>
+  <p>الأدوات الإحصائية تقيس من وصل، بينما سيرش كونسول تقيس ما سبق الوصول: كيف رأاك جوجل. أربع مساءلات يجيب عنها بأرقام من لوحتك لا من حدس أحد:</p>
+  <ul>
+    <li><b>هل موقعي مفهرس أصلًا؟</b> وما الصفحات التي لم تدخل «المخزن» ولماذا.</li>
+    <li><b>بأي كلمات أظهرت؟</b> وكم مرة ظهرت (الظهور) مقابل كم مرة نقر من رأاني.</li>
+    <li><b>ماذا يقول جوجل عن جودة صفحاتي؟</b> سرعة التحميل، توافق الجوال، والبيانات المنظمة.</li>
+    <li><b>من يشير إلى موقعي؟</b> الروابط الخارجية التي يقرؤها جوجل فعلًا.</li>
+  </ul>
+  <p>إن كنت تنوي تطبيق <a href="https://adelmah.com/blog/seo-guide-arabic.html">تحسين محركات البحث</a> على أي مستوى، فهذه الأداة هي لوحة القياس التي تعرف منها إن كان ما تفعله له أثر — وهي أول ما أفتحه لعميل قبل أي شيء آخر.</p>
+
+  <h2>إثبات الملكية: ضبطٌ مرة واحدة لا يعود</h2>
+  <p>افتح الأداة وسجّل الدخول بحساب جوجل يبقى معك، ثم أثبت ملكية الموقع بطريقتين متاحتين؛ اختر واحدة وأتمّها:</p>
+  <ul>
+    <li><b>المعرّف النطاقي (Domain property):</b> تغطي كل نوافذ الموقع (http/https وكل النطاقات الفرعية) وتتحقق بسجل TXT في إعدادات DNS لدى مزوّد النطاق. الأفضل لأصحاب المواقع التي عندها منتجات على نطاقات فرعية — مثل <b>hasba.adelmah.com</b> و<b>takhfeedat.adelmah.com</b> عندي — لأنها تُحتسب كلها في مكان واحد.</li>
+    <li><b>معرّف البادئة (URL prefix):</b> تحقق عبر ملف HTML ترفعه للموقع أو وسم في الصفحة الرئيسية؛ تغطي ما تحدده فقط، فأنشئ خاصية لكل نافذة تحتاجها.</li>
+  </ul>
+  <div class="box tip"><b>قاعدة سريعة:</b> أثبت ملكية النطاق كاملاً إن أتمّت الخطوة من لوحة مزوّد النطاق، واطلب من مطوّرك فعلها إن لم تتحكم بنفسك — والملكية لا تنتقل حين يرحل المطور، فهي على حساب جوجل لا على حسابه.</div>
+
+  <h2>تقرير الأداء: أربع مقاييس تقرؤها شهرياً</h2>
+  <p>التقرير الأهم في الأداة كلها. فتحته من «الأداء» ثم «نتائج البحث»، وقارن دائماً بالفترة السابقة (آخر 28 يوماً مقابل 28 يوماً قبلها) حتى يصبح الارتفاع والانخفاض له معنى:</p>
+  <table class="tbl">
+    <thead><tr><th>المقياس</th><th>ماذا يعني</th><th>ماذا تفعل حين يهبط</th></tr></thead>
+    <tbody>
+      <tr><td>النقرات</td><td>كم زارك جاء من نتائج جوجل</td><td>انظر أي صفحة وكيّمة سقطتا؛ غالباً تغيّر ترتيب منافس أو نزلت صفحة في النتائج</td></tr>
+      <tr><td>الظهور</td><td>كم مرة ظهر رابطك مهما لم يُنقر</td><td>ظهور عالٍ ونقرات قليلة = عنوان أو وصف لا يقنع؛ فهذا شغل صفحة لا شغل جوجل</td></tr>
+      <tr><td>متوسط نسبة النقر (CTR)</td><td>النقرات ÷ الظهور</td><td>اقرأ عنوانك ووصفك بعين الباحث: هل يجيب عن سؤاله من السطر الأول؟</td></tr>
+      <tr><td>متوسط المركز</td><td>ترتيبك المتوسط للكلمات</td><td>تذبذب منزلتين طبيعي؛ انتبه فقط للهبوط المستمر أسابيع متتالية</td></tr>
+    </tbody>
+  </table>
+  <p>ولا تقرأ تقريراً يومياً: الأرقام تتحرك بطبيعتها، والتحليل الشهري هو ما يفرّق بين قرار وقلق.</p>
+
+  <h2>فحص الفهرسة: كيف تتأكد أن صفحتك داخل اللعبة؟</h2>
+  <p>الفهرسة هي دخول صفحتك مخزن جوجل بعد أن يزحف إليها؛ من غيرها لا تظهر في نتائج مهما كانت جيدة. الشريط الأعلى في الأداة («فحص عنوان URL») هو مفتاحك: أدخل رابط الصفحة، وسيقرأ لك حالتها وآخر زحف إليها. وفي أغلب الحالات تظهر نتيجة من ثلاث:</p>
+  <ol class="nlist">
+    <li><b>رابط في Google:</b> الصفحة مفهرسة — لا شيء عليك، ويمكنك رؤية ماذا ظهر عندها من كلمات في تقرير الأداء.</li>
+    <li><b>رابط ليس في Google (مشكلة):</b> فتحت التفاصيل وستجد السبب المحتمل — والفقرات التالية تشرح أشهرها.</li>
+    <li><b>رابط ليس في Google (بلا مشكلة):</b> غالباً «صفحة بديلة مناسبة» — يعني أن جوجل فضّل نسخة أخرى (صفحة بـ canonical أخرى)؛ إن كان اختياره صحيحاً فاتركه، وإن خالف المقصود فالخطأ في وسم canonical أو إعدادات التحويل.</li>
+  </ol>
+  <p>وبعد إصلاح أي شيء، زر «طلب الفهرسة» يجعل جوجل يعيد الزيارة أسرع من الانتظار — استخدمه للصفحات المهمة الجديدة والمحدّثة، لا لكل رابط في الموقع.</p>
+
+  <h2>«الصفحة لم تُفهرس»: أسباب شائعة ومعالجتها</h2>
+  <p>تقرير «فهرسة الصفحات» في القائمة الجانبية يعرض كل الروابط التي اكتشفها جوجل وماذا فعل بها. الأسباب التي تراها كثيراً ومعناها الحقيقي:</p>
+  <ul>
+    <li><b>وسم noindex:</b> منع صريح أضعه مطور أو إعداد قالب؛ احذف الوسم من الصفحات التي تريد ظهورها، واتركه لعلامات الشكر وصفحات البحث الداخلي.</li>
+    <li><b>تحويل إعادة توجيه:</b> الرابط يذهب لمكان آخر؛ اتركه إن كان التحويل مقصوداً، وارفع الصفحات الجديدة بعنوانها النهائي.</li>
+    <li><b>خطأ 404 أو 500:</b> صفحة محذوفة أو معطلة؛ أصلح الرابط الداخلي الذي يشير إليها أو اعمل تحويلاً 301 لصفحة بديلة قريبة.</li>
+    <li><b>صفحة بديلة مناسبة:</b> تكرار محتوى (منتج واحد بعنوانين)؛ وحد الأصل بالـ canonical الصحيح.</li>
+    <li><b>تم الزحف — غير مفهرسة حالياً:</b> جوجل رأاها ولم يقرر أخذها بعد؛ عادةً ضعف تفرد المحتوى أو خفة قيمتها داخل بنية الموقع. عزّز ربطها من صفحات قوية لديك واجعل محتواها مميزاً.</li>
+    <li><b>غير مكتشفة:</b> لا صلة تشير إليها؛ أضفها لخريطة الموقع واربطها من صفحات قائمة.</li>
+  </ul>
+  <p>واحتفظ بالقاعدة: لا تحاول فرض فهرسة كل رابط على الموقع — صفحات المقارنات والعلامات والروابط التقنية قد تكون مقصودة الخروج من الفهرسة.</p>
+
+  <h2>خرائط الموقع: أخبر جوجل ببنية موقعك بدل أن يخمّن</h2>
+  <p>ملف <b>sitemap.xml</b> قائمة بعناوين صفحاتك المهمة وتاريخ آخر تعديل؛ رفعها يقرّب اكتشاف الصفحات الجديدة. تأكد أنها تتضمن صفحات منتجاتك ومقالاتك دون صفحات بلا قيمة، وأنها تتحدث تلقائياً أو تُحدَّث مع كل محتوى جديد — كما في موقعي حيث أضفت للمقالات الجديدة إدخالات بتاريخها. ثم أرسلها من قسم «خرائط الموقع» في الأداة وتابع «عدد الروابط المكتشفة».</p>
+
+  <h2>تجربة الصفحة: القياسات التي قرأها جوجل من زوارك</h2>
+  <p>تقرير «Core Web Vitals» داخل الأداة يجمع قياسات تجربة الاستخدام الحقيقية: سرعة العنصر الرئيسي، استجابة الصفحة للنقر، وثبات العناصر. لا تعالجها من هنا فحسب — فالتفصيل والحلول في <a href="https://adelmah.com/blog/core-web-vitals-speed.html">دليل Core Web Vitals وسرعة الموقع</a>، والدور هنا هو المتابعة: إن خرجت نقطة من «جيد» فأعِد الفحص بعد أسبوعين من الإصلاح، فالتقرير يعتمد بيانات زوار حقيقية لا اختباراً بيدك.</p>
+
+  <h2>الروابط: من يشير إليك، وأين يذهب عملك؟</h2>
+  <p>تقرير «الروابط» يعرض المواقع التي تشير إليك، والصفحات الأكثر إشارةً، والنص الذي تحدثت به (النص الرابط). استخدمه للاطمئنان لا للهوس: روابط من مواقع سمعتها تُعد إشارة جيدة، وذيل طويل من الروابط من مواضع غريبة لا يعالجه شيء يفعله صاحب موقع عادي. الأهم منه: <b>الروابط الداخلية</b> — جوجل يعرف أهمية صفحتك من من يشير إليها داخل موقعك، فاجعل كل مقالة جديدة تُربط من صفحات مقالة ذات صلة.</p>
+
+  <h2>روتين شهر لا يستهلك ساعتك</h2>
+  <ol class="nlist">
+    <li>تقرير الأداء: قارن 28 يوماً ب28 يوماً؛ سجّل النقرات والظهور والكيّمة الأعلى تغيراً.</li>
+    <li>تقرير الفهرسة: صفحات «بلا مشكلة» تعدّها ثم تفقّد ما غيّر حاجتها — زيادة مفاجئة في «صفحة بديلة» بعد تحديث تكنيكي إشارة أن canonical تحرك.</li>
+    <li>Core Web Vitals: نقطة واحدة خرجت «جيدة» = موعد إصلاح.</li>
+    <li>فحص رابطي المقالات الجديدة: طلب الفهرسة بعد نشرها مباشرة.</li>
+    <li>خرائط الموقع: تأكد أن المحتوى الجديد ظهر فيها.</li>
+  </ol>
+  <p>ولقياس ما يحدث بعد أن يصل الزائر — البيع، التسجيل، الوقت — فذلك شغل <a href="https://adelmah.com/blog/google-analytics-4-basics.html">تحليلات GA4</a> لا سيرش كونسول؛ الأداتان تكمل كل منهما الأخرى ولا تعوض إحداهما الأخرى.</p>
+
+  <h2>أخطاء تُهدر الأداة</h2>
+  <div class="cmp">
+    <div class="crow"><div class="ck">قلق يومي من الأرقام</div><div class="cv">قراءة تقرير كل يوم واتخاذ قرارات من تذبذب طبيعي <small>قرار أفضل: مراجعة شهرية بفترة مقارنة</small></div></div>
+    <div class="crow"><div class="ck">مطاردة «الظهور»</div><div class="cv">ظهور مئات المرات بكلمة لا تشتري منك شيئاً <small>المقياس الذي يعنيك: نقرات بكلمات الناس معك أصلًا</small></div></div>
+    <div class="crow"><div class="ck">إعادة إرسال الخريطة كل أسبوع</div><div class="cv">لا يسرّع شيئاً؛ تُرسل مرة، ثم عند إضافة محتوى <small>جوجل يعيد الزحف وفق جدوله لا وفق ضغطك</small></div></div>
+  </div>
+  <div class="box warn"><b>تحذير:</b> لا تشتري «خدمة فهرسة سريعة» ولا أداة ترسل عشرات طلبات الفهرسة باسمك؛ الطلبات اليدوية المتعاقبة التي لا تحدث تغييراً حقيقياً في الصفحة تحديثاً مؤقتاً فقط، والحل الدائم محتوى يُستحق الفهرسة.</div>
+
+  <h2>أسئلة شائعة</h2>
+  <h3>كم يستغرق ظهور صفحتي الجديدة في جوجل؟</h3>
+  <p>لا موعد رسمي؛ صفحات موقع عصري جيد الأداء تُكتشف ساعات أو أيام، وصفحات في مواقع بلا خريطة أو بلا روابط داخلية تمر أسابيع. الأدوات الأصح للقياس: فحص الرابط نفسه في الشريط الأعلى (ترى ما إذا كان مفهرساً ومتى زُحف)، ثم ظهور كلماته في تقرير الأداء. سرعة زحف جوجل أثر عنده كذلك: موقع بطيء يُزحف إليه أقل في <a href="https://adelmah.com/blog/core-web-vitals-speed.html">دليل Core Web Vitals</a> تفصيل ذلك.</p>
+  <h3>هل استخدام الأداة يرفع ترتيب موقعي مباشرة؟</h3>
+  <p>الأداة عدّاد لا دواء؛ تسجيل الملكية بذاته لا يعطي ميزة ترتيب. ما يعطيه هو ما تفعله بعد أن تريك الأرقام: صفحة تُصلح عنوانها الذي لا يُنقر، عناوين محذوفة من الفهرسة تعود، تجربة صفحة تتحسن. وإن أردت البروتوكول الكامل الذي تتسق فيه هذه الإصلاحات مع كل شغل السيو، فراجع <a href="https://adelmah.com/blog/seo-guide-arabic.html">دليل تحسين محركات البحث للمبتدئين</a>.</p>
+
+  <section class="related">
+    <span class="eyebrow">Read next</span>
+    <h2>مقالات مرتبطة</h2>
+    <div class="rposts">
+      <a class="rpost" href="https://adelmah.com/blog/seo-guide-arabic.html"><small>سيو</small><h3>دليل تحسين محركات البحث بالعربية</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/core-web-vitals-speed.html"><small>سرعة</small><h3>Core Web Vitals وسرعة الموقع — تأثيرها على الترتيب والمبيعات</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/schema-rich-results.html"><small>نتائج غنية</small><h3>البيانات المنظمة (Schema) والنتائج الغنية في جوجل</h3></a>
+      <a class="rpost" href="https://adelmah.com/blog/google-analytics-4-basics.html"><small>تحليلات</small><h3>جوجل أناليتكس 4 (GA4) للمبتدئين</h3></a>
+    </div>
+  </section>
+
+  <aside class="abox author">
+    <img src="https://adelmah.com/adel-mahmoud-sm.webp" alt="عادل محمود" width="72" height="72" loading="lazy">
+    <div>
+      <b>عادل محمود</b>
+      <small>مؤسس ومطور · جدة، السعودية</small>
+      <p>يعمل بين التسويق الرقمي وتطوير العلامات التجارية في جدة، ويكتب ما يُطبَّق فعلاً: قرارات تُقاس من لوحات المنصات نفسها لا من وعود.</p>
+    </div>
+  </aside>
+</article>
+
+<footer>
+  <div class="wrap f-in">
+    <span>© <span id="y" class="num"></span> عادل محمود — مؤسس ومطور · جدة، السعودية</span>
+    <a href="https://adelmah.com/blog/">كل المقالات</a>
+    <a href="https://adelmah.com/">adelmah.com</a>
+  </div>
+</footer>
+
+<script>
+document.querySelector('#y').textContent=new Date().getFullYear();
+const themeBtn=document.querySelector('#themeBtn');
+function setTheme(t){document.documentElement.dataset.theme=t;const m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',t==='light'?'#f7f5ef':'#050d0c');try{localStorage.setItem('theme2',t)}catch(e){}}
+setTheme(document.documentElement.dataset.theme||'light');
+themeBtn.onclick=()=>setTheme(document.documentElement.dataset.theme==='light'?'dark':'light');
+addEventListener('scroll',()=>document.querySelector('#nav').classList.toggle('scrolled',scrollY>10),{passive:true});
+</script>
+</body>
+</html>
