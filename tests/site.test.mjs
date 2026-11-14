@@ -65,20 +65,20 @@ describe('نظام الثيم', () => {
   });
 });
 
-describe('الهوية «حبر وذهب»', () => {
-  it('توكنز الوضع الداكن: خلفية حبرية + ذهبي مطفي', () => {
-    expect(rootBlock).toContain('--bg:#0d0b09');
-    expect(rootBlock).toContain('--accent:#d9a441');
+describe('الهوية «التركواز» (زي اللوجو)', () => {
+  it('توكنز الوضع الداكن: نفس الألوان الأصلية', () => {
+    expect(rootBlock).toContain('--bg:#050d0c');
+    expect(rootBlock).toContain('--accent:#3fd4a8');
   });
 
-  it('توكنز الوضع الفاتح: ورقي + ذهبي داكن', () => {
-    expect(lightBlock).toContain('--bg:#faf7f0');
-    expect(lightBlock).toContain('--accent:#8a6217');
+  it('توكنز الوضع الفاتح: نفس الألوان الأصلية', () => {
+    expect(lightBlock).toContain('--bg:#f7f5ef');
+    expect(lightBlock).toContain('--accent:#0f9d7e');
   });
 
-  it('لا بقايا للون التركواز القديم في CSS الصفحة', () => {
-    const forbidden = [/3fd4a8/i, /1fa985/i, /5fe3bc/i, /0f9d7e/i, /0c7f67/i, /0b7a62/i, /63,212,168/, /31,169,133/, /15,157,126/];
-    for (const re of forbidden) expect(styleText, `لون قديم: ${re}`).not.toMatch(re);
+  it('لا بقايا للذهبي في CSS الصفحة', () => {
+    const forbidden = [/d9a441/i, /b8862f/i, /8a6217/i, /6e4d12/i, /217,164,65/, /138,98,23/, /184,134,47/];
+    for (const re of forbidden) expect(styleText, `لون ذهبي: ${re}`).not.toMatch(re);
   });
 
   it('خط Amiri مُحمّل محليًا (fonts.css + ملف woff2 + preload)', () => {
