@@ -133,6 +133,17 @@ blockquote.poetry .v2{color:var(--accent)}
 .socials a.gh:hover{border-color:#8b949e;background:rgba(139,148,158,.18)}
 .socials a.play:hover{border-color:#00c3ff;background:rgba(0,195,255,.1)}
 
+/* skill cards: each card takes its own tech color (Flutter blue / web amber / Figma purple) */
+.card.mob .ic{background:rgba(4,104,215,.22);color:#6db3ff}
+:root[data-theme="light"] .card.mob .ic{background:rgba(4,104,215,.1);color:#0468d7}
+.card.mob:hover{border-color:#0468d7}
+.card.web .ic{background:rgba(245,158,11,.15);color:#fbbf24}
+:root[data-theme="light"] .card.web .ic{background:rgba(180,83,9,.1);color:#b45309}
+.card.web:hover{border-color:#f59e0b}
+.card.des .ic{background:rgba(162,89,255,.16);color:#b98cff}
+:root[data-theme="light"] .card.des .ic{background:rgba(124,58,237,.1);color:#7c3aed}
+.card.des:hover{border-color:#a259ff}
+
 .profile{position:relative;justify-self:center;width:min(480px,100%)}
 .profile-card{position:relative;border-radius:28px;padding:2px;background:linear-gradient(140deg,rgba(63,212,168,.9),rgba(63,212,168,.08) 35%,rgba(63,212,168,.08) 65%,rgba(232,183,90,.7));box-shadow:0 40px 80px -30px rgba(0,0,0,.9),0 0 70px -20px rgba(63,212,168,.35)}
 .profile-inner{border-radius:26px;background:var(--surface);padding:10px;position:relative}
@@ -526,19 +537,19 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <p class="sec-sub rv" data-en="My edge over other marketers: I'm the one who built the products — so I know the audience, the data and the conversion points from the inside. I wrote the whole method up in the <a href='blog/digital-marketing-saudi-guide.html'>complete digital marketing guide for Saudi businesses</a>, and every article sits in the <a href='blog/'>articles index</a>.">ميزة مش موجودة عند السوق كله: أنا اللي برمجت المنتج بنفسي — فعارف جمهوره وبياناته ونقاط البيع من الجوّه. والمنهج كاملًا مكتوب في <a href="blog/digital-marketing-saudi-guide.html">دليل التسويق الرقمي للشركات في السعودية</a>، وكل المقالات مرتّبة في <a href="blog/">فهرس المقالات</a>.</p>
     </div>
     <div class="svc svc3">
-      <div class="card rv">
+      <div class="card rv mob">
         <div class="ic"><svg class="i"><use href="#phone"/></svg></div>
         <h3 data-en="Mobile apps">تطبيقات الموبايل</h3>
         <p data-en="A strong engineering background across the full app cycle in Flutter: auth, realtime chat, WebRTC calls, push and offline connectivity.">خلفية تطوير قوية بكامل دورة تطبيق الموبايل بـ Flutter: تسجيل دخول، محادثات لحظية، مكالمات WebRTC، إشعارات، واتصال محلي بدون إنترنت.</p>
         <div class="tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>WebRTC</span></div>
       </div>
-      <div class="card rv">
+      <div class="card rv web">
         <div class="ic"><svg class="i"><use href="#globe"/></svg></div>
         <h3 data-en="Web & backend">الويب والباك إند</h3>
         <p data-en="I built and launched fast, SEO-ready sites with Next.js on Vercel, backed by Supabase, Firebase and Python automation.">بنيت وأطلقت مواقع سريعة ومهيأة لمحركات البحث بـ Next.js على Vercel، مع Supabase و Firebase وأتمتة بـ Python.</p>
         <div class="tags"><span>Next.js</span><span>React</span><span>Supabase</span><span>Python</span></div>
       </div>
-      <div class="card rv">
+      <div class="card rv des">
         <div class="ic"><svg class="i"><use href="#pen"/></svg></div>
         <h3 data-en="UI/UX design">تصميم الواجهات</h3>
         <p data-en="I design the interface and experience myself in Figma before writing a line of code — with conversion goals in mind.">بصمم الواجهات وتجربة المستخدم بنفسي في Figma قبل ما أكتب أول سطر كود، بشكل يخدم أهداف التحويل.</p>

@@ -69,6 +69,15 @@ describe('بنية الصفحة', () => {
     expect(styleText).toMatch(/#ea4335/i);
     expect(styleText).toMatch(/#0a66c2/i);
   });
+
+  it('بطاقات المهارات بألوان تناسب كل واحدة', () => {
+    expect(doc.querySelector('#marketing .svc3 .card.mob .ic'), 'بطاقة الموبايل').toBeTruthy();
+    expect(doc.querySelector('#marketing .svc3 .card.web .ic'), 'بطاقة الويب').toBeTruthy();
+    expect(doc.querySelector('#marketing .svc3 .card.des .ic'), 'بطاقة التصميم').toBeTruthy();
+    expect(styleText).toMatch(/#0468d7/i);
+    expect(styleText).toMatch(/#a259ff/i);
+    expect(styleText).toMatch(/#f59e0b/i);
+  });
 });
 
 describe('نظام الثيم', () => {
