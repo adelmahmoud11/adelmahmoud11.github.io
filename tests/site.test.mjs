@@ -89,6 +89,18 @@ describe('بنية الصفحة', () => {
     expect(doc.querySelector('.mini-calc'), 'الويدجت القديم لسه موجود').toBeNull();
     expect(existsSync(resolve(ROOT, 'hasba-screenshot.webp'))).toBe(true);
   });
+
+  it('بطاقة تخفيضات مثلهما: صورة حقيقية والكارتين قد بعض', () => {
+    const img = doc.querySelector('.pcard a.pc-shot img[src*="takhfeedat-screenshot"]');
+    expect(img, 'صورة تخفيضات مفقودة').toBeTruthy();
+    expect(img.getAttribute('loading')).toBe('lazy');
+    expect(img.getAttribute('decoding')).toBe('async');
+    expect(img.getAttribute('width')).toBeTruthy();
+    expect(img.getAttribute('height')).toBeTruthy();
+    expect(doc.querySelector('.soon-list'), 'القائمة القديمة لسه موجودة').toBeNull();
+    expect(existsSync(resolve(ROOT, 'takhfeedat-screenshot.webp'))).toBe(true);
+    expect(doc.querySelectorAll('.proj2 .pcard').length).toBe(2);
+  });
 });
 
 describe('نظام الثيم', () => {
