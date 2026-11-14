@@ -51,6 +51,14 @@ describe('بنية الصفحة', () => {
     expect(doc.documentElement.dir).toBe('rtl');
     expect(doc.documentElement.lang).toBe('ar');
   });
+
+  it('كل بطاقة خدمة فيها مجسم بصري للخدمة', () => {
+    expect(doc.querySelectorAll('#services .svc > .card').length).toBe(4);
+    expect(doc.querySelector('#services .mock-search'), 'مجسم بحث جوجل مفقود').toBeTruthy();
+    expect(doc.querySelector('#services .mock-ad'), 'مجسم الإعلان مفقود').toBeTruthy();
+    expect(doc.querySelector('#services .mock-social'), 'مجسم السوشيال مفقود').toBeTruthy();
+    expect(doc.querySelector('#services .mock-chart'), 'مجسم التقارير مفقود').toBeTruthy();
+  });
 });
 
 describe('نظام الثيم', () => {

@@ -174,6 +174,33 @@ h2{font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.3;font-weight:700;letter-s
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
 .tags span{font:500 .78rem 'Inter';padding:4px 10px;border-radius:6px;background:var(--surface2);border:1px solid var(--border);color:var(--muted)}
 
+/* service card mockups — each card shows its service visually */
+.mock{margin:2px 0 18px;border:1px solid var(--border);border-radius:12px;background:var(--bg);padding:12px;font-size:.72rem;color:var(--muted);transition:border-color .25s}
+.card:hover .mock{border-color:var(--accent)}
+.ms-bar{display:flex;align-items:center;gap:8px;border:1px solid var(--border2);border-radius:999px;padding:7px 12px;background:var(--surface)}
+.ms-g{width:10px;height:10px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.ms-q{color:var(--text);font-style:normal;font-weight:500;font-size:.78rem}
+.ms-res{margin-top:10px;padding:10px;border-radius:10px;background:var(--surface);border:1px solid transparent;transition:border-color .25s}
+.card:hover .ms-res{border-color:var(--accent)}
+.ms-url{display:block;color:var(--accent-t);font-size:.66rem;direction:ltr;text-align:right}
+.ms-res b{display:block;color:var(--text);font-size:.8rem;margin-top:2px;line-height:1.5}
+.ms-ln{display:block;height:6px;border-radius:3px;background:var(--surface2);margin-top:6px}
+.ms-ln.short{width:62%}
+.ms-pill{display:inline-block;margin-top:8px;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent-t);font-size:.64rem;font-weight:600}
+.ma-head,.ms-head{display:flex;align-items:center;gap:8px}
+.ma-av{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-d));flex-shrink:0}
+.ma-head b,.ms-head b{display:block;color:var(--text);font-size:.78rem;line-height:1.25}
+.ma-head small,.ms-head small{color:var(--dim)}
+.ma-img{margin-top:10px;height:62px;border-radius:10px;display:grid;place-items:center;color:#03221a;font-weight:600;font-size:.8rem;background:linear-gradient(135deg,var(--accent-d),var(--accent))}
+.ma-cta{margin-top:10px;display:inline-block;padding:6px 16px;border-radius:8px;background:var(--accent);color:#03221a;font-weight:600;font-size:.7rem}
+.ms-acts{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.ms-acts span{padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:.64rem}
+.mc-bars{display:flex;align-items:flex-end;gap:7px;height:72px;padding:4px 2px 0}
+.mc-bars i{flex:1;height:var(--h);border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,var(--accent),var(--accent-d));opacity:.85;transform:scaleY(.45);transform-origin:bottom;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.mc-bars i:nth-child(2){transition-delay:.06s}.mc-bars i:nth-child(3){transition-delay:.12s}.mc-bars i:nth-child(4){transition-delay:.18s}.mc-bars i:nth-child(5){transition-delay:.24s}.mc-bars i:nth-child(6){transition-delay:.3s}
+.card:hover .mc-bars i{transform:scaleY(1)}
+.mc-bars+.ms-pill{margin-top:10px}
+
 /* case study */
 .case{border:1px solid var(--border);border-radius:28px;background:linear-gradient(180deg,var(--surface),var(--bg));overflow:hidden}
 .case-top{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:48px;align-items:center}
@@ -430,25 +457,44 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     </div>
     <div class="svc">
       <div class="card rv">
-        <div class="ic"><svg class="i"><use href="#target"/></svg></div>
+        <div class="mock mock-search" aria-hidden="true">
+          <div class="ms-bar"><span class="ms-g"></span><i class="ms-q" data-en="digital marketing specialist">أخصائي تسويق رقمي</i></div>
+          <div class="ms-res">
+            <span class="ms-url">adelmah.com</span>
+            <b>عادل محمود — تسويق رقمي وبناء علامات</b>
+            <span class="ms-ln"></span><span class="ms-ln short"></span>
+            <span class="ms-pill" data-en="Shows up in search results">يظهر في نتائج البحث</span>
+          </div>
+        </div>
         <h3 data-en="SEO — search engine optimization">تحسين محركات البحث (SEO)</h3>
         <p data-en="Full technical audits, on-page optimization and content strategy so the site ranks first when people search for its offer.">تهيئة تقنية كاملة ومحتوى مدروس، عشان يطلع الموقع في أول نتائج جوجل لما الناس تدوّر على الحل اللي بيقدّمه.</p>
         <div class="tags"><span>On-page</span><span>Technical</span><span>Keywords</span></div>
       </div>
       <div class="card rv">
-        <div class="ic"><svg class="i"><use href="#mega"/></svg></div>
+        <div class="mock mock-ad" aria-hidden="true">
+          <div class="ma-head"><span class="ma-av"></span><div><b data-en="Your page">صفحتك</b><small data-en="Sponsored">مُموَّل</small></div></div>
+          <div class="ma-img" data-en="Your ad reaches the right audience">إعلانك يصل للجمهور المناسب</div>
+          <div class="ma-cta" data-en="Learn more">اعرف أكثر</div>
+        </div>
         <h3 data-en="Paid ads">الحملات المدفوعة (Google و Meta)</h3>
         <p data-en="Smart campaigns on Google & Meta with carefully planned budgets: precise targeting, A/B testing and constant cost optimization.">حملات ذكية على Google و Meta بميزانيات محسوبة: استهداف دقيق، تجارب A/B، وتقليل مستمر لتكلفة النتيجة.</p>
         <div class="tags"><span>Google Ads</span><span>Meta Ads</span><span>A/B</span></div>
       </div>
       <div class="card rv">
-        <div class="ic"><svg class="i"><use href="#pen"/></svg></div>
+        <div class="mock mock-social" aria-hidden="true">
+          <div class="ms-head"><span class="ma-av"></span><div><b data-en="Your post">منشورك</b><small data-en="Just now">الآن</small></div></div>
+          <span class="ms-ln" style="margin-top:10px"></span><span class="ms-ln short"></span>
+          <div class="ms-acts"><span data-en="Like">إعجاب</span><span data-en="Comment">تعليق</span><span data-en="Share">مشاركة</span></div>
+        </div>
         <h3 data-en="Content & social">المحتوى والسوشيال ميديا</h3>
         <p data-en="Content that explains and sells: posts, landing pages and short-form video tailored to the right audience.">محتوى بيشرح وبيبيع: بوستات، صفحات هبوط، وفيديوهات قصيرة مصممة على قياس الجمهور بالظبط.</p>
         <div class="tags"><span>Content</span><span>Social</span><span>Copywriting</span></div>
       </div>
       <div class="card rv">
-        <div class="ic"><svg class="i"><use href="#zap"/></svg></div>
+        <div class="mock mock-chart" aria-hidden="true">
+          <div class="mc-bars"><i style="--h:30%"></i><i style="--h:48%"></i><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:82%"></i><i style="--h:96%"></i></div>
+          <span class="ms-pill" data-en="A clear report of what actually works">تقرير واضح عما ينجح فعلًا</span>
+        </div>
         <h3 data-en="Tracking & analytics">التتبع والتحليل</h3>
         <p data-en="Numbers, not impressions: GA4 and Meta Pixel setup, conversion tracking and clear reports on what actually works.">أرقام مش إنطباعات: تثبيت Google Analytics و Meta Pixel، قياس التحويل، وتقارير واضحة عن اللي بيشتغل فعلًا.</p>
         <div class="tags"><span>GA4</span><span>Pixel</span><span>Reports</span></div>
