@@ -1,0 +1,17 @@
+{
+  "name": "adelmah-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "adelmah.com — personal site (local dev + tests; deploy source stays plain HTML)",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "serve": "npx http-server -p 8080 -c-1 ."
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "jsdom": "^31.0.1",
+    "vitest": "^5.1.0"
+  }
+}
